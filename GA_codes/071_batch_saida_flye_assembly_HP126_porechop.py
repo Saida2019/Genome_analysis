@@ -5,7 +5,7 @@
 #SBATCH -n 4                 # Number of CPU cores
 #SBATCH --mem=16G
 #SBATCH -t 06:00:00          # Time limit (HH:MM:SS)
-#SBATCH -J saida_flye_assembly_HP126      # Job name
+#SBATCH -J saida_flye_assembly_HP126_porechop      # Job name
 #SBATCH --mail-user=saidasharifzade@yahoo.com      # Job email notification
 #SBATCH --output=%x.%j.out
 ##SBATCH --reservation=uppmax2025-3-3_1
@@ -14,8 +14,8 @@
 module load bioinfo-tools Flye/2.9.5
 
 
-export INPUT_DIR=/home/saidas/2_Beganovic_2023/DNA_reads
-export OUTPUT_DIR=/home/saidas/GA_results/Flye_assembly_HP126
+export INPUT_DIR=/home/saidas/GA_results/Porechop
+export OUTPUT_DIR=/home/saidas/GA_results/Flye_assembly_HP126_Porechop
 mkdir -p $OUTPUT_DIR
 
 # Copy files to temporary directory for processing
@@ -24,7 +24,7 @@ cd $SNIC_TMP
 
 # Process each sample
 
-flye -t 4 --nano-raw SRR24413066.fastq.gz --min-overlap 2000 --out-dir $OUTPUT_DIR
+flye -t 4 --nano-raw SRR24413066.fastq.gz --out-dir $OUTPUT_DIR
 
 # Copy the output files back to the results director
 cp -r $SNIC_TMP/* $OUTPUT_DIR/

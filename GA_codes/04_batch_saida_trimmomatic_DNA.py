@@ -26,11 +26,11 @@ do
     trimmomatic PE -phred33 \
 SRR244130"$i"_1.fastq.gz SRR244130"$i"_2.fastq.gz \
 SRR244130"$i"_1_trimmed.fastq.gz SRR244130"$i"_2_trimmed.fastq.gz \
-SRR244130"${i}"_1_unpaired.fastq.gz SRR244130"${i}"_2_unpaired.fastq.gz \
+SRR244130"$i"_1_unpaired.trimmed.fastq.gz SRR244130"$i"_2_unpaired.trimmed.fastq.gz \
 ILLUMINACLIP:$TRIMMOMATIC_HOME/adapters/TruSeq3-PE.fa:2:30:10 \
-LEADING:20 TRAILING:20 MINLEN:200 \
+LEADING:20 TRAILING:15 MINLEN:100 \
 -threads 2                    
 done
 
 # Copy the output files back to the results director
-cp *_trimmed.fastq.gz $OUTPUT_DIR/
+cp *trimmed.fastq.gz *unpaired.trimmed.fastq.gz $OUTPUT_DIR/

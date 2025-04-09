@@ -1,0 +1,6 @@
+gnuplot 4.6 patchlevel 2
+Writing filtered delta file asmHP126_vs_ref.filter
+Reading delta file asmHP126_vs_ref.filter
+Writing plot files asmHP126_vs_ref.fplot, asmHP126_vs_ref.rplot
+Writing gnuplot script asmHP126_vs_ref.gp
+Rendering plot asmHP126_vs_ref.png
