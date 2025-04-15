@@ -14,17 +14,17 @@
 module load bioinfo-tools Flye/2.9.5
 
 
-export INPUT_DIR=/home/saidas/GA_results/Porechop
+export INPUT_DIR=/home/saidas/GA_results/Porechop2/trimmed_demultiplexed_reads_66
 export OUTPUT_DIR=/home/saidas/GA_results/Flye_assembly_HP126_Porechop
 mkdir -p $OUTPUT_DIR
 
 # Copy files to temporary directory for processing
-cp $INPUT_DIR/SRR24413066.fastq.gz $SNIC_TMP/
+cp $INPUT_DIR/*.fastq.gz $SNIC_TMP/
 cd $SNIC_TMP
 
 # Process each sample
 
-flye -t 4 --nano-raw SRR24413066.fastq.gz --out-dir $OUTPUT_DIR
+flye -t 4 --nano-corr *.fastq.gz --out-dir $OUTPUT_DIR
 
 # Copy the output files back to the results director
-cp -r $SNIC_TMP/* $OUTPUT_DIR/
+#cp -r $SNIC_TMP/* $OUTPUT_DIR/
