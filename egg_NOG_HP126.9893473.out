@@ -1,0 +1,2 @@
+eggNOG_data/5.0.0: Data available at $EGGNOG_DATA_ROOT, see 'module help eggNOG_data/5.0.0'
+slurmstepd: error: *** JOB 9893473 ON s155 CANCELLED AT 2025-04-12T15:43:35 ***

@@ -1,0 +1,1284 @@
+[09:47:04] This is prokka 1.14.6
+[09:47:04] Written by Torsten Seemann <torsten.seemann@gmail.com>
+[09:47:04] Homepage is https://github.com/tseemann/prokka
+[09:47:04] Local time is Thu Apr 10 09:47:04 2025
+[09:47:04] You are saidas
+[09:47:04] Operating system is linux
+[09:47:04] You have BioPerl 1.007001
+[09:47:04] System has 16 cores.
+[09:47:04] Will use maximum of 2 cores.
+[09:47:04] Annotating as >>> Bacteria <<<
+[09:47:04] Generating locus_tag from 'pilon_polished_HP126.fasta' contents.
+[09:47:04] Setting --locustag BFGNJJDO from MD5 bf0733d82dc81c452112b1a6eee3ed4e
+[09:47:04] Enabling options to ensure Genbank/ENA/DDJB submission compliance.
+[09:47:04] Creating new output folder: /scratch/9892709/prokka_output
+[09:47:04] Running: mkdir -p \/scratch\/9892709\/prokka_output
+[09:47:04] Using filename prefix: HP126_annotation.XXX
+[09:47:04] Setting HMMER_NCPU=1
+[09:47:04] Writing log to: /scratch/9892709/prokka_output/HP126_annotation.log
+[09:47:04] Command: /sw/bioinfo/prokka/1.45-5b58020/snowy/bin/prokka --outdir /scratch/9892709/prokka_output --prefix HP126_annotation --proteins protein_rimoza.faa --genus Streptomyces --species rimosus --kingdom Bacteria --cpus 2 --force --compliant pilon_polished_HP126.fasta
+[09:47:04] Appending to PATH: /sw/bioinfo/prokka/1.45-5b58020/rackham/bin/../binaries/linux
+[09:47:04] Appending to PATH: /sw/bioinfo/prokka/1.45-5b58020/rackham/bin/../binaries/linux/../common
+[09:47:04] Appending to PATH: /sw/bioinfo/prokka/1.45-5b58020/rackham/bin
+[09:47:04] Looking for 'aragorn' - found /sw/bioinfo/prokka/1.45-5b58020/rackham/bin/../binaries/linux/aragorn
+[09:47:04] Determined aragorn version is 001002 from 'ARAGORN v1.2.38 Dean Laslett'
+[09:47:04] Looking for 'barrnap' - found /sw/bioinfo/barrnap/0.8/snowy/bin/barrnap
+[09:47:04] Determined barrnap version is 000008 from 'barrnap 0.8'
+[09:47:04] Looking for 'blastp' - found /sw/bioinfo/blast/2.11.0+/snowy/bin/blastp
+[09:47:05] Determined blastp version is 002011 from 'blastp: 2.11.0+'
+[09:47:05] Looking for 'cmpress' - found /sw/bioinfo/prokka/1.45-5b58020/rackham/bin/../binaries/linux/cmpress
+[09:47:05] Determined cmpress version is 001001 from '# INFERNAL 1.1.2 (July 2016)'
+[09:47:05] Looking for 'cmscan' - found /sw/bioinfo/prokka/1.45-5b58020/rackham/bin/../binaries/linux/cmscan
+[09:47:05] Determined cmscan version is 001001 from '# INFERNAL 1.1.2 (July 2016)'
+[09:47:05] Looking for 'egrep' - found /usr/bin/egrep
+[09:47:05] Looking for 'find' - found /usr/bin/find
+[09:47:05] Looking for 'grep' - found /usr/bin/grep
+[09:47:05] Looking for 'hmmpress' - found /sw/bioinfo/hmmer/3.1b2/snowy/bin/hmmpress
+[09:47:05] Determined hmmpress version is 003001 from '# HMMER 3.1b2 (February 2015); http://hmmer.org/'
+[09:47:05] Looking for 'hmmscan' - found /sw/bioinfo/hmmer/3.1b2/snowy/bin/hmmscan
+[09:47:05] Determined hmmscan version is 003001 from '# HMMER 3.1b2 (February 2015); http://hmmer.org/'
+[09:47:05] Looking for 'java' - found /usr/bin/java
+[09:47:05] Looking for 'makeblastdb' - found /sw/bioinfo/blast/2.11.0+/snowy/bin/makeblastdb
+[09:47:06] Determined makeblastdb version is 002011 from 'makeblastdb: 2.11.0+'
+[09:47:06] Looking for 'minced' - found /sw/bioinfo/minced/0.2.0/snowy/minced
+[09:47:07] Determined minced version is 002000 from 'minced 0.2.0'
+[09:47:07] Looking for 'parallel' - found /sw/parallel/gnuparallel/20170122/snowy/bin/parallel
+[09:47:07] Determined parallel version is 20170122 from 'GNU parallel 20170122'
+[09:47:07] Looking for 'prodigal' - found /sw/bioinfo/prodigal/2.6.3/snowy/bin/prodigal
+[09:47:07] Determined prodigal version is 002006 from 'Prodigal V2.6.3: February, 2016'
+[09:47:07] Looking for 'prokka-genbank_to_fasta_db' - found /sw/bioinfo/prokka/1.45-5b58020/snowy/bin/prokka-genbank_to_fasta_db
+[09:47:07] Looking for 'sed' - found /usr/bin/sed
+[09:47:07] Looking for 'signalp' - found /sw/bioinfo/SignalP/4.1f/snowy/signalp
+[09:47:07] Determined signalp version is 004001 from '4.1 9892709'
+[09:47:07] Looking for 'tbl2asn' - found /sw/bioinfo/tbl2asn/25.8/snowy/tbl2asn
+[09:47:08] Determined tbl2asn version is 025008 from 'tbl2asn 25.8   arguments:'
+[09:47:08] Using genetic code table 11.
+[09:47:08] Loading and checking input file: pilon_polished_HP126.fasta
+[09:47:08] Wrote 4 contigs totalling 8771836 bp.
+[09:47:08] Predicting tRNAs and tmRNAs
+[09:47:08] Running: aragorn -l -gc11  -w \/scratch\/9892709\/prokka_output\/HP126_annotation\.fna
+[09:47:18] 1 tRNA-Thr c[293129,293223] 35 (cgt)
+[09:47:18] 2 tRNA-Trp [490116,490209] 33 (cca)
+[09:47:18] 3 tRNA-Gly c[522710,522791] 35 (gcc)
+[09:47:18] 4 tRNA-Gly [937247,937329] 35 (ccc)
+[09:47:18] 5 tRNA-Arg c[1350995,1351079] 30 (tcg)
+[09:47:18] 6 tRNA-Thr c[1515594,1515667] 34 (ggt)
+[09:47:18] 7 tRNA-Ala [1577770,1577865] 36 (agc)
+[09:47:18] 8 tRNA-Arg c[1698938,1699031] 34 (tcg)
+[09:47:18] 9 tRNA-Glu c[1724036,1724109] 35 (ctc)
+[09:47:18] 10 tRNA-Gln c[1724146,1724218] 34 (ctg)
+[09:47:18] 11 tRNA-Glu c[1724234,1724307] 35 (ctc)
+[09:47:18] 12 tRNA-Glu c[1724370,1724443] 35 (ctc)
+[09:47:18] 13 tRNA-Gln c[1724482,1724554] 34 (ctg)
+[09:47:18] 14 tRNA-Arg [2026850,2026923] 34 (ccg)
+[09:47:18] 15 tRNA-Ala c[2052102,2052195] 35 (cgc)
+[09:47:18] 16 tRNA-Met c[2210695,2210769] 35 (cat)
+[09:47:18] 17 tRNA-Met c[2213009,2213083] 35 (cat)
+[09:47:18] 18 tRNA-Gly [2739916,2740010] 34 (tcc)
+[09:47:18] 19 tRNA-Thr c[2791306,2791380] 35 (tgt)
+[09:47:18] 20 tRNA-Ser [2869380,2869460] 34 (gct)
+[09:47:18] 21 tRNA-Arg c[3074433,3074518] 35 (ccg)
+[09:47:18] 22 tRNA-Thr c[3088688,3088764] 35 (cgt)
+[09:47:18] 23 tRNA-Pro [3148663,3148737] 35 (cgg)
+[09:47:18] 24 tRNA-Ser [3209272,3209357] 35 (gga)
+[09:47:18] 25 tRNA-Ser [3263996,3264083] 35 (cga)
+[09:47:18] 26 tRNA-Met c[3318539,3318613] 35 (cat)
+[09:47:18] 27 tRNA-Arg c[3328792,3328865] 34 (acg)
+[09:47:18] 28 tRNA-Ser c[3330126,3330217] 37 (gct)
+[09:47:18] 29 tRNA-Ser c[3357288,3357375] 35 (tga)
+[09:47:18] 30 tRNA-Ile [3513009,3513085] 35 (gat)
+[09:47:18] 31 tRNA-Ala [3517341,3517414] 34 (tgc)
+[09:47:18] 32 tRNA-Leu [3534594,3534678] 35 (cag)
+[09:47:18] 33 tRNA-Gly c[3715337,3715410] 33 (ccc)
+[09:47:18] 34 tRNA-Gly c[3789977,3790050] 34 (gcc)
+[09:47:18] 35 tRNA-Gly c[3794350,3794423] 34 (gcc)
+[09:47:18] 36 tRNA-Gly c[3794498,3794570] 33 (tcc)
+[09:47:18] 37 tRNA-Gly c[3794615,3794687] 33 (tcc)
+[09:47:18] 38 tRNA-Asp c[3809926,3810001] 36 (gtc)
+[09:47:18] 39 tRNA-Phe c[3815609,3815685] 35 (gaa)
+[09:47:18] 40 tRNA-Asp c[3815689,3815764] 36 (gtc)
+[09:47:18] 41 tRNA-Glu c[3815803,3815876] 35 (ttc)
+[09:47:18] 42 tRNA-Lys [3821792,3821866] 34 (ttt)
+[09:47:18] 43 tRNA-Ala c[3963644,3963735] 40 (ggc)
+[09:47:18] 44 tRNA-Tyr [4036222,4036304] 35 (gta)
+[09:47:18] 45 tRNA-Thr [4038680,4038753] 34 (ggt)
+[09:47:18] 46 tRNA-Met [4038801,4038874] 34 (cat)
+[09:47:18] 47 tRNA-Trp [4043890,4043963] 34 (cca)
+[09:47:18] 48 tRNA-Arg c[4294427,4294502] 34 (cct)
+[09:47:18] 49 tRNA-Gly c[4360571,4360650] 39 (gcc)
+[09:47:18] 50 tRNA-Ala [4365152,4365225] 34 (cgc)
+[09:47:18] 51 tRNA-Gln c[4451976,4452049] 33 (ttg)
+[09:47:18] 52 tRNA-Leu [4491844,4491926] 33 (taa)
+[09:47:18] 53 tmRNA [4675173,4675540] 96,134 ANTKRDSFALAA*
+[09:47:18] 54 tRNA-Cys c[4712420,4712492] 34 (gca)
+[09:47:18] 55 tRNA-Leu c[4754113,4754197] 35 (tag)
+[09:47:18] 56 tRNA-Lys c[4805051,4805125] 35 (ctt)
+[09:47:18] 57 tRNA-Lys c[4812240,4812315] 35 (ctt)
+[09:47:18] 58 tRNA-Lys c[4826709,4826784] 35 (ctt)
+[09:47:18] 59 tRNA-His c[4853629,4853704] 34 (gtg)
+[09:47:18] 60 tRNA-Arg c[4970445,4970518] 34 (tct)
+[09:47:18] 61 tRNA-Gly c[5062914,5062987] 33 (tcc)
+[09:47:18] 62 tRNA-Pro [5063170,5063246] 35 (tgg)
+[09:47:18] 63 tRNA-Ala [5112959,5113032] 34 (ggc)
+[09:47:18] 64 tRNA-Ala [5117193,5117266] 34 (ggc)
+[09:47:18] 65 tRNA-Asn [5272342,5272415] 34 (gtt)
+[09:47:18] 66 tRNA-Asn [5272420,5272493] 34 (gtt)
+[09:47:18] 67 tRNA-Met [5272673,5272749] 35 (cat)
+[09:47:18] 68 tRNA-Val [5367389,5367461] 33 (tac)
+[09:47:18] 69 tRNA-Thr [5385976,5386050] 32 (cgt)
+[09:47:18] 70 tRNA-Ala c[5730554,5730636] 36 (agc)
+[09:47:18] 71 tRNA-Pro c[5772326,5772417] 31 (cgg)
+[09:47:18] 72 tRNA-Leu c[5933935,5934020] 36 (caa)
+[09:47:18] 73 tRNA-Pro c[6147278,6147366] 29 (ggg)
+[09:47:18] 74 tRNA-Arg c[6192480,6192577] 37 (gcg)
+[09:47:20] 75 tRNA-Pro [6324125,6324214] 33 (ggg)
+[09:47:20] 76 tRNA-Leu c[6386985,6387070] 34 (gag)
+[09:47:20] 77 tRNA-Pro c[6552341,6552415] 35 (ggg)
+[09:47:20] 78 tRNA-Val c[6581493,6581565] 33 (gac)
+[09:47:20] 79 tRNA-Val c[6581598,6581670] 33 (gac)
+[09:47:20] 80 tRNA-Val c[6581717,6581789] 33 (gac)
+[09:47:20] 81 tRNA-Cys c[6581791,6581864] 33 (gca)
+[09:47:20] 82 tRNA-Gly c[6581899,6581972] 34 (gcc)
+[09:47:20] 83 tRNA-Val [6588421,6588493] 33 (cac)
+[09:47:20] 84 tRNA-Val [6589187,6589260] 33 (cac)
+[09:47:20] 1 tRNA-Asp c[79137,79226] 36 (gtc)
+[09:47:20] 2 tRNA-Arg c[246741,246822] 33 (tcg)
+[09:47:20] 3 tRNA-Ala [400023,400105] 37 (ggc)
+[09:47:20] 1 tRNA-Pro c[328492,328566] 35 (ggg)
+[09:47:20] 2 tRNA-Met c[388575,388649] 35 (cat)
+[09:47:20] 3 tRNA-Val [474668,474755] 27 (cac)
+[09:47:20] 4 tRNA-Leu c[603551,603638] 34 (gag)
+[09:47:20] Found 91 tRNAs
+[09:47:20] Predicting Ribosomal RNAs
+[09:47:20] Running Barrnap with 2 threads
+[09:47:27] 1 gnl|Prokka|BFGNJJDO_1 1022341 5S ribosomal RNA
+[09:47:27] 2 gnl|Prokka|BFGNJJDO_1 1022530 23S ribosomal RNA
+[09:47:27] 3 gnl|Prokka|BFGNJJDO_1 1025954 16S ribosomal RNA
+[09:47:27] 4 gnl|Prokka|BFGNJJDO_1 1516571 5S ribosomal RNA
+[09:47:27] 5 gnl|Prokka|BFGNJJDO_1 1516760 23S ribosomal RNA
+[09:47:27] 6 gnl|Prokka|BFGNJJDO_1 1520182 16S ribosomal RNA
+[09:47:27] 7 gnl|Prokka|BFGNJJDO_1 2903907 5S ribosomal RNA
+[09:47:27] 8 gnl|Prokka|BFGNJJDO_1 2904096 23S ribosomal RNA
+[09:47:27] 9 gnl|Prokka|BFGNJJDO_1 2907522 16S ribosomal RNA
+[09:47:27] 10 gnl|Prokka|BFGNJJDO_1 3870616 16S ribosomal RNA
+[09:47:27] 11 gnl|Prokka|BFGNJJDO_1 3872445 23S ribosomal RNA
+[09:47:27] 12 gnl|Prokka|BFGNJJDO_1 3875640 5S ribosomal RNA
+[09:47:27] 13 gnl|Prokka|BFGNJJDO_1 4600011 16S ribosomal RNA
+[09:47:27] 14 gnl|Prokka|BFGNJJDO_1 4601840 23S ribosomal RNA
+[09:47:27] 15 gnl|Prokka|BFGNJJDO_1 4605035 5S ribosomal RNA
+[09:47:27] 16 gnl|Prokka|BFGNJJDO_1 5173859 16S ribosomal RNA
+[09:47:27] 17 gnl|Prokka|BFGNJJDO_1 5175690 23S ribosomal RNA
+[09:47:27] 18 gnl|Prokka|BFGNJJDO_1 5178887 5S ribosomal RNA
+[09:47:27] 19 gnl|Prokka|BFGNJJDO_1 6164145 16S ribosomal RNA
+[09:47:27] 20 gnl|Prokka|BFGNJJDO_1 6165976 23S ribosomal RNA
+[09:47:27] 21 gnl|Prokka|BFGNJJDO_1 6169220 5S ribosomal RNA
+[09:47:27] Found 21 rRNAs
+[09:47:27] Skipping ncRNA search, enable with --rfam if desired.
+[09:47:27] Total of 111 tRNA + rRNA features
+[09:47:27] Searching for CRISPR repeats
+[09:47:29] Found 0 CRISPRs
+[09:47:29] Predicting coding sequences
+[09:47:29] Contigs total 8771836 bp, so using single mode
+[09:47:29] Running: prodigal -i \/scratch\/9892709\/prokka_output\/HP126_annotation\.fna -c -m -g 11 -p single -f sco -q
+[09:47:49] Excluding CDS which overlaps existing RNA (tRNA) at gnl|Prokka|BFGNJJDO_1:292159..293277 on + strand
+[09:47:49] Excluding CDS which overlaps existing RNA (tRNA) at gnl|Prokka|BFGNJJDO_1:489834..494447 on - strand
+[09:47:49] Excluding CDS which overlaps existing RNA (tRNA) at gnl|Prokka|BFGNJJDO_1:519497..523993 on + strand
+[09:47:50] Excluding CDS which overlaps existing RNA (tRNA) at gnl|Prokka|BFGNJJDO_1:936574..938943 on - strand
+[09:47:50] Excluding CDS which overlaps existing RNA (tRNA) at gnl|Prokka|BFGNJJDO_1:1350776..1351639 on - strand
+[09:47:51] Excluding CDS which overlaps existing RNA (tRNA) at gnl|Prokka|BFGNJJDO_1:1577714..1578223 on + strand
+[09:47:51] Excluding CDS which overlaps existing RNA (tRNA) at gnl|Prokka|BFGNJJDO_1:1698434..1699414 on + strand
+[09:47:52] Excluding CDS which overlaps existing RNA (tRNA) at gnl|Prokka|BFGNJJDO_1:2049767..2053201 on - strand
+[09:47:53] Excluding CDS which overlaps existing RNA (tRNA) at gnl|Prokka|BFGNJJDO_1:2739671..2742424 on + strand
+[09:47:53] Excluding CDS which overlaps existing RNA (tRNA) at gnl|Prokka|BFGNJJDO_1:2869404..2869862 on - strand
+[09:47:53] Excluding CDS which overlaps existing RNA (tRNA) at gnl|Prokka|BFGNJJDO_1:3058747..3083757 on - strand
+[09:47:55] Excluding CDS which overlaps existing RNA (tRNA) at gnl|Prokka|BFGNJJDO_1:3821798..3823510 on - strand
+[09:47:55] Excluding CDS which overlaps existing RNA (rRNA) at gnl|Prokka|BFGNJJDO_1:3872606..3873370 on - strand
+[09:47:55] Excluding CDS which overlaps existing RNA (tRNA) at gnl|Prokka|BFGNJJDO_1:3963516..3964676 on - strand
+[09:47:56] Excluding CDS which overlaps existing RNA (tRNA) at gnl|Prokka|BFGNJJDO_1:4360301..4361617 on + strand
+[09:47:56] Excluding CDS which overlaps existing RNA (rRNA) at gnl|Prokka|BFGNJJDO_1:4602001..4602765 on - strand
+[09:47:57] Excluding CDS which overlaps existing RNA (tRNA) at gnl|Prokka|BFGNJJDO_1:5385150..5386700 on + strand
+[09:47:58] Excluding CDS which overlaps existing RNA (tRNA) at gnl|Prokka|BFGNJJDO_1:5729727..5730791 on + strand
+[09:47:58] Excluding CDS which overlaps existing RNA (tRNA) at gnl|Prokka|BFGNJJDO_1:5771997..5773277 on + strand
+[09:47:58] Excluding CDS which overlaps existing RNA (tRNA) at gnl|Prokka|BFGNJJDO_1:6146825..6149404 on + strand
+[09:47:58] Excluding CDS which overlaps existing RNA (tRNA) at gnl|Prokka|BFGNJJDO_1:6191842..6193581 on + strand
+[09:47:59] Excluding CDS which overlaps existing RNA (tRNA) at gnl|Prokka|BFGNJJDO_1:6324161..6324883 on - strand
+[09:48:00] Excluding CDS which overlaps existing RNA (tRNA) at gnl|Prokka|BFGNJJDO_3:78927..79535 on + strand
+[09:48:00] Excluding CDS which overlaps existing RNA (tRNA) at gnl|Prokka|BFGNJJDO_3:228288..249815 on - strand
+[09:48:00] Excluding CDS which overlaps existing RNA (tRNA) at gnl|Prokka|BFGNJJDO_3:399846..400160 on - strand
+[09:48:00] Excluding CDS which overlaps existing RNA (tRNA) at gnl|Prokka|BFGNJJDO_4:474568..474882 on + strand
+[09:48:00] Found 7646 CDS
+[09:48:00] Connecting features back to sequences
+[09:48:00] Not using genus-specific database. Try --usegenus to enable it.
+[09:48:00] Preparing user-supplied primary BLAST annotation source: protein_rimoza.faa
+[09:48:00] Guessed source was in fasta format.
+[09:48:00] Running: makeblastdb -dbtype prot -in protein_rimoza\.faa -out \/scratch\/9892709\/prokka_output\/proteins -logfile /dev/null
+[09:48:01] Using /inference source as 'protein_rimoza.faa'
+[09:48:01] Annotating CDS, please be patient.
+[09:48:01] Will use 2 CPUs for similarity searching.
+[09:48:13] There are still 7646 unannotated CDS left (started with 7646)
+[09:48:13] Will use blast to search against /scratch/9892709/prokka_output/proteins with 2 CPUs
+[09:48:13] Running: cat \/scratch\/9892709\/prokka_output\/HP126_annotation\.proteins\.tmp\.54020\.faa | parallel --gnu --plain -j 2 --block 640191 --recstart '>' --pipe blastp -query - -db /scratch/9892709/prokka_output/proteins -evalue 1e-09 -qcov_hsp_perc 80 -num_threads 1 -num_descriptions 1 -num_alignments 1 -seg no > \/scratch\/9892709\/prokka_output\/HP126_annotation\.proteins\.tmp\.54020\.blast 2> /dev/null
+[09:53:00] Modify product: MULTISPECIES: MSMEG_1061 family FMN-dependent PPOX-type flavoprotein [Streptomyces] => MULTISPECIES: family FMN-dependent PPOX-type flavoprotein [Streptomyces]
+[09:53:00] Modify product: MULTISPECIES: DUF4253 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:00] Modify product: MULTISPECIES: DUF397 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:00] Modify product: MULTISPECIES: DUF6790 family protein [Streptomyces] => hypothetical protein
+[09:53:00] Modify product: MULTISPECIES: DUF5994 family protein [Streptomyces] => hypothetical protein
+[09:53:00] Modify product: MULTISPECIES: DUF5994 family protein [Streptomyces] => hypothetical protein
+[09:53:00] Modify product: MULTISPECIES: TetR/AcrR family transcriptional regulator C-terminal ligand-binding domain-containing protein[Streptomyces] => hypothetical protein
+[09:53:00] Modify product: MULTISPECIES: DUF5994 family protein [Streptomyces] => hypothetical protein
+[09:53:00] Modify product: MULTISPECIES: DUF5994 family protein [Streptomyces] => hypothetical protein
+[09:53:00] Modify product: MULTISPECIES: DUF5994 family protein [Streptomyces] => hypothetical protein
+[09:53:00] Modify product: MULTISPECIES: DUF4386 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:00] Modify product: MULTISPECIES: DUF4386 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:00] Modify product: MULTISPECIES: DUF5999 family protein [Streptomyces] => hypothetical protein
+[09:53:00] Modify product: MULTISPECIES: DUF317 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:00] Modify product: MULTISPECIES: DUF317 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:00] Modify product: MULTISPECIES: DUF317 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:00] Modify product: MULTISPECIES: DUF4913 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:00] Modify product: MULTISPECIES: DUF6112 family protein [Streptomyces] => hypothetical protein
+[09:53:00] Modify product: MULTISPECIES: SCO6880 family protein [Streptomyces] => MULTISPECIES: family protein [Streptomyces]
+[09:53:00] Modify product: MULTISPECIES: DUF6238 family protein [Streptomyces] => hypothetical protein
+[09:53:00] Modify product: MULTISPECIES: DUF317 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:01] Modify product: MULTISPECIES: DnaB-like helicase N-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:01] Modify product: MULTISPECIES: DUF5655 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:01] Modify product: MULTISPECIES: DUF3159 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:01] Modify product: MULTISPECIES: DUF2267 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:01] Modify product: MULTISPECIES: DUF2267 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:01] Modify product: MULTISPECIES: DUF4956 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:01] Modify product: MULTISPECIES: DUF3140 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:01] Modify product: MULTISPECIES: LuxR C-terminal-related transcriptional regulator [Streptomyces] => hypothetical protein
+[09:53:01] Modify product: MULTISPECIES: DUF2752 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:01] Modify product: MULTISPECIES: DUF5133 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:01] Modify product: MULTISPECIES: DUF3224 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:01] Modify product: MULTISPECIES: DUF4440 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:01] Modify product: MULTISPECIES: maleylpyruvate isomerase N-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:01] Modify product: MULTISPECIES: DUF5954 family protein [Streptomyces] => hypothetical protein
+[09:53:01] Modify product: MULTISPECIES: C-terminal binding protein [Streptomyces] => hypothetical protein
+[09:53:01] Modify product: MULTISPECIES: DUF6328 family protein [Streptomyces] => hypothetical protein
+[09:53:01] Modify product: MULTISPECIES: DUF397 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:01] Modify product: MULTISPECIES: DUF885 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:01] Modify product: MULTISPECIES: DUF5685 family protein [Streptomyces] => hypothetical protein
+[09:53:01] Modify product: MULTISPECIES: DUF1684 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:01] Modify product: MULTISPECIES: TIGR04053 family radical SAM/SPASM domain-containing protein [Streptomyces] => MULTISPECIES: family radical SAM/SPASM domain-containing protein [Streptomyces]
+[09:53:01] Modify product: MULTISPECIES: Coenzyme F420 hydrogenase/dehydrogenase, beta subunit C-terminal domain [Streptomyces] => hypothetical protein
+[09:53:01] Modify product: MULTISPECIES: DUF3048 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:01] Modify product: MULTISPECIES: DUF397 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:01] Modify product: MULTISPECIES: DUF6328 family protein [Streptomyces] => hypothetical protein
+[09:53:01] Modify product: MULTISPECIES: DUF5709 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:01] Modify product: MULTISPECIES: DUF2795 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:01] Modify product: MULTISPECIES: DUF4442 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:01] Modify product: MULTISPECIES: DUF6596 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:01] Modify product: MULTISPECIES: DUF885 family protein [Streptomyces] => hypothetical protein
+[09:53:01] Modify product: MULTISPECIES: DUF2277 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:01] Modify product: MULTISPECIES: DUF4232 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:01] Modify product: MULTISPECIES: DUF6338 family protein [Streptomyces] => hypothetical protein
+[09:53:01] Modify product: MULTISPECIES: DUF3037 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:01] Modify product: MULTISPECIES: DUF881 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:01] Modify product: MULTISPECIES: DUF881 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:02] Modify product: MULTISPECIES: DUF262 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:02] Modify product: MULTISPECIES: PaaX family transcriptional regulator C-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:02] Modify product: MULTISPECIES: LuxR C-terminal-related transcriptional regulator [Streptomyces] => hypothetical protein
+[09:53:02] Modify product: MULTISPECIES: DUF6099 family protein [Streptomyces] => hypothetical protein
+[09:53:02] Modify product: MULTISPECIES: LuxR C-terminal-related transcriptional regulator [Streptomyces] => hypothetical protein
+[09:53:02] Modify product: MULTISPECIES: DUF364 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:02] Modify product: MULTISPECIES: DUF742 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:02] Modify product: MULTISPECIES: DUF2637 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:02] Modify product: MULTISPECIES: DUF3710 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:02] Modify product: MULTISPECIES: DUF3093 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:02] Modify product: MULTISPECIES: DUF4193 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:02] Modify product: MULTISPECIES: DUF5998 family protein [Streptomyces] => hypothetical protein
+[09:53:02] Modify product: MULTISPECIES: glycogen debranching N-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:02] Modify product: MULTISPECIES: DUF4192 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:02] Modify product: MULTISPECIES: TetR family transcriptional regulator C-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:02] Modify product: MULTISPECIES: helicase C-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:02] Modify product: MULTISPECIES: DUF3046 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:02] Modify product: MULTISPECIES: SCO5717 family growth-regulating ATPase [Streptomyces] => MULTISPECIES: family growth-regulating ATPase [Streptomyces]
+[09:53:02] Modify product: MULTISPECIES: DUF503 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:02] Modify product: MULTISPECIES: DUF4190 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:02] Modify product: MULTISPECIES: DUF2469 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:02] Modify product: MULTISPECIES: DUF2620 family protein [Streptomyces] => hypothetical protein
+[09:53:02] Modify product: MULTISPECIES: DUF3515 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:02] Modify product: MULTISPECIES: DUF4188 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:02] Modify product: MULTISPECIES: DUF397 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:02] Modify product: MULTISPECIES: DUF397 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:02] Modify product: MULTISPECIES: DUF397 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:02] Modify product: MULTISPECIES: DUF397 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:02] Modify product: MULTISPECIES: DUF6247 family protein [Actinomycetes] => hypothetical protein
+[09:53:02] Modify product: MULTISPECIES: DUF742 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:02] Modify product: MULTISPECIES: DUF742 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:02] Modify product: MULTISPECIES: DUF4360 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:02] Modify product: MULTISPECIES: PRC and DUF2382 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:02] Modify product: MULTISPECIES: DUF6191 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:02] Modify product: MULTISPECIES: TIGR00730 family Rossman fold protein [Streptomyces] => MULTISPECIES: family Rossman fold protein [Streptomyces]
+[09:53:02] Modify product: MULTISPECIES: VC0807 family protein [Streptomyces] => MULTISPECIES: family protein [Streptomyces]
+[09:53:02] Modify product: MULTISPECIES: SAV_2336 N-terminal domain-related protein [Streptomyces] => hypothetical protein
+[09:53:02] Modify product: MULTISPECIES: CU044_2847 family protein [Streptomyces] => MULTISPECIES: family protein [Streptomyces]
+[09:53:02] Modify product: MULTISPECIES: enhanced serine sensitivity protein SseB C-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:03] Modify product: MULTISPECIES: DUF5993 family protein [Streptomyces] => hypothetical protein
+[09:53:03] Modify product: MULTISPECIES: DUF4259 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:03] Modify product: MULTISPECIES: DUF4235 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:03] Modify product: MULTISPECIES: DUF3618 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:03] Modify product: MULTISPECIES: DUF6114 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:03] Modify product: MULTISPECIES: DUF6230 family protein [Streptomyces] => hypothetical protein
+[09:53:03] Modify product: MULTISPECIES: DUF3817 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:03] Modify product: MULTISPECIES: DUF5937 family protein [Streptomyces] => hypothetical protein
+[09:53:03] Modify product: MULTISPECIES: MTH1187 family thiamine-binding protein [Streptomyces] => MULTISPECIES: family thiamine-binding protein [Streptomyces]
+[09:53:03] Modify product: MULTISPECIES: DUF3817 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:03] Modify product: MULTISPECIES: DUF2268 domain-containing putative Zn-dependent protease [Streptomyces] => hypothetical protein
+[09:53:03] Modify product: MULTISPECIES: SCO5389 family protein [Streptomyces] => MULTISPECIES: family protein [Streptomyces]
+[09:53:03] Modify product: MULTISPECIES: DUF2550 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:03] Modify product: MULTISPECIES: DUF262 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:03] Modify product: MULTISPECIES: MSMEG_6728 family protein [Streptomyces] => MULTISPECIES: family protein [Streptomyces]
+[09:53:03] Modify product: MULTISPECIES: 3-oxoacyl-[acyl-carrier-protein] synthase III C-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:03] Modify product: MULTISPECIES: DUF742 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:03] Modify product: MULTISPECIES: SAV_2336 N-terminal domain-related protein [Streptomyces] => hypothetical protein
+[09:53:03] Modify product: MULTISPECIES: CU044_2847 family protein [Streptomyces] => MULTISPECIES: family protein [Streptomyces]
+[09:53:03] Modify product: MULTISPECIES: DUF6104 family protein [Streptomyces] => hypothetical protein
+[09:53:03] Modify product: MULTISPECIES: DUF4097 family beta strand repeat-containing protein [Streptomyces] => hypothetical protein
+[09:53:03] Modify product: MULTISPECIES: Clp protease N-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:03] Modify product: MULTISPECIES: DUF190 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:03] Modify product: MULTISPECIES: glycoside hydrolase family 3 N-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:03] Modify product: MULTISPECIES: DUF3311 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:03] Modify product: MULTISPECIES: UPF0182 family protein [Streptomyces] => hypothetical protein
+[09:53:03] Modify product: MULTISPECIES: PPA1309 family protein [Streptomyces] => MULTISPECIES: family protein [Streptomyces]
+[09:53:03] Modify product: MULTISPECIES: DUF3152 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:03] Modify product: MULTISPECIES: DUF3107 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:03] Modify product: MULTISPECIES: DUF6758 family protein [Streptomyces] => hypothetical protein
+[09:53:03] Modify product: MULTISPECIES: DUF1003 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:03] Modify product: MULTISPECIES: DUF3117 domain-containing protein [Streptomycetaceae] => hypothetical protein
+[09:53:03] Modify product: MULTISPECIES: TIGR00730 family Rossman fold protein [Streptomyces] => MULTISPECIES: family Rossman fold protein [Streptomyces]
+[09:53:03] Modify product: MULTISPECIES: DUF6113 family protein [Streptomyces] => hypothetical protein
+[09:53:03] Modify product: MULTISPECIES: DUF397 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:03] Modify product: MULTISPECIES: DUF6542 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:03] Modify product: MULTISPECIES: DUF4245 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:03] Modify product: MULTISPECIES: DUF1707 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:03] Modify product: MULTISPECIES: DUF402 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:03] Modify product: MULTISPECIES: DUF397 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:03] Modify product: MULTISPECIES: DUF5936 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:03] Modify product: MULTISPECIES: DUF1648 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:03] Modify product: MULTISPECIES: DUF4307 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:03] Modify product: MULTISPECIES: DUF2786 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:03] Modify product: MULTISPECIES: DUF2180 family protein [Streptomyces] => hypothetical protein
+[09:53:03] Modify product: MULTISPECIES: IclR family transcriptional regulator C-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:03] Modify product: MULTISPECIES: MOSC N-terminal beta barrel domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:03] Modify product: MULTISPECIES: biotin carboxylase N-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:03] Modify product: MULTISPECIES: Clp protease N-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:03] Modify product: MULTISPECIES: DUF397 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:04] Modify product: MULTISPECIES: DUF2690 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:04] Modify product: MULTISPECIES: DUF3017 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:04] Modify product: MULTISPECIES: DUF6350 family protein [Streptomyces] => hypothetical protein
+[09:53:04] Modify product: MULTISPECIES: DUF5682 family protein [Streptomyces] => hypothetical protein
+[09:53:04] Modify product: MULTISPECIES: DUF5691 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:04] Modify product: DUF4232 domain-containing protein [Streptomyces rimosus] => hypothetical protein
+[09:53:04] Modify product: MULTISPECIES: biotin carboxylase N-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:04] Modify product: MULTISPECIES: TIGR03084 family metal-binding protein [Streptomyces] => MULTISPECIES: family metal-binding protein [Streptomyces]
+[09:53:04] Modify product: MULTISPECIES: DUF4097 family beta strand repeat-containing protein [Streptomyces] => hypothetical protein
+[09:53:04] Modify product: MULTISPECIES: DUF2530 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:04] Modify product: DUF3027 domain-containing protein [Streptomyces rimosus] => hypothetical protein
+[09:53:04] Modify product: MULTISPECIES: DUF2243 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:04] Modify product: MULTISPECIES: DUF4031 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:04] Modify product: MULTISPECIES: DUF3263 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:04] Modify product: MULTISPECIES: DUF3574 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:04] Modify product: MULTISPECIES: DUF4287 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:04] Modify product: MULTISPECIES: DUF397 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:04] Modify product: MULTISPECIES: DUF2993 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:04] Modify product: MULTISPECIES: DUF2993 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:04] Modify product: MULTISPECIES: DUF1416 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:04] Modify product: MULTISPECIES: DUF3099 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:04] Modify product: MULTISPECIES: glycine cleavage T C-terminal barrel domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:04] Modify product: MULTISPECIES: DUF2516 family protein [Streptomyces] => hypothetical protein
+[09:53:04] Modify product: MULTISPECIES: DUF47 family protein [Streptomyces] => hypothetical protein
+[09:53:04] Modify product: MULTISPECIES: DUF397 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:04] Modify product: MULTISPECIES: DUF397 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:04] Modify product: MULTISPECIES: DUF397 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:04] Modify product: MULTISPECIES: SCO6880 family protein [Streptomyces] => MULTISPECIES: family protein [Streptomyces]
+[09:53:04] Modify product: MULTISPECIES: SCO3374 family protein [Streptomyces] => MULTISPECIES: family protein [Streptomyces]
+[09:53:04] Modify product: MULTISPECIES: DUF2520 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:04] Modify product: MULTISPECIES: DUF5937 family protein [Streptomyces] => hypothetical protein
+[09:53:04] Modify product: MULTISPECIES: DUF4232 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:04] Modify product: MULTISPECIES: DUF1453 family protein [Streptomyces] => hypothetical protein
+[09:53:04] Modify product: MULTISPECIES: DUF3180 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:04] Modify product: MULTISPECIES: DUF397 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:04] Modify product: MULTISPECIES: DUF2752 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:04] Modify product: MULTISPECIES: Rv3654c family TadE-like protein [Streptomyces] => MULTISPECIES: family TadE-like protein [Streptomyces]
+[09:53:04] Modify product: MULTISPECIES: DUF4244 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:04] Modify product: MULTISPECIES: TetR family transcriptional regulator C-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:04] Modify product: MULTISPECIES: DUF4177 domain-containing protein [Streptomycetaceae] => hypothetical protein
+[09:53:04] Modify product: MULTISPECIES: DUF4365 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:04] Modify product: MULTISPECIES: beta-ketoacyl synthase N-terminal-like domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:04] Modify product: MULTISPECIES: MaoC family dehydratase N-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:04] Modify product: MULTISPECIES: DUF5063 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:04] Modify product: MULTISPECIES: DUF4232 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:04] Modify product: MULTISPECIES: DUF72 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:04] Modify product: MULTISPECIES: DUF4157 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:04] Modify product: MULTISPECIES: LytR C-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:04] Modify product: MULTISPECIES: DUF2127 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:04] Modify product: MULTISPECIES: DUF4097 family beta strand repeat-containing protein [Streptomyces] => hypothetical protein
+[09:53:05] Modify product: MULTISPECIES: DUF2797 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:05] Modify product: MULTISPECIES: DUF2637 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:05] Modify product: MULTISPECIES: DUF6886 family protein [Streptomyces] => hypothetical protein
+[09:53:05] Modify product: MULTISPECIES: DUF397 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:05] Modify product: MULTISPECIES: MOSC N-terminal beta barrel domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:05] Modify product: MULTISPECIES: DUF1906 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:05] Modify product: MULTISPECIES: bifunctional MaoC family dehydratase N-terminal/OB-fold nucleic acid binding domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:05] Modify product: MULTISPECIES: DUF5926 family protein [Streptomyces] => hypothetical protein
+[09:53:05] Modify product: MULTISPECIES: IclR family transcriptional regulator C-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:05] Modify product: MULTISPECIES: DUF5326 family protein [Streptomyces] => hypothetical protein
+[09:53:05] Modify product: MULTISPECIES: DUF6049 family protein [Streptomyces] => hypothetical protein
+[09:53:05] Modify product: MULTISPECIES: DUF3566 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:05] Modify product: MULTISPECIES: DUF5324 family protein [Streptomyces] => hypothetical protein
+[09:53:05] Modify product: MULTISPECIES: DUF881 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:05] Modify product: MULTISPECIES: DUF3662 and FHA domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:05] Modify product: MULTISPECIES: DUF2252 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:05] Modify product: MULTISPECIES: DUF2252 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:05] Modify product: MULTISPECIES: DUF5819 family protein [Streptomyces] => hypothetical protein
+[09:53:05] Modify product: MULTISPECIES: DUF397 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:05] Modify product: MULTISPECIES: DUF4232 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:05] Modify product: MULTISPECIES: DUF397 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:05] Modify product: MULTISPECIES: DUF6458 family protein [Streptomyces] => hypothetical protein
+[09:53:05] Modify product: MULTISPECIES: DUF4232 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:05] Modify product: MULTISPECIES: DUF6344 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:05] Modify product: MULTISPECIES: 3-oxoacyl-[acyl-carrier-protein] synthase III C-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:05] Modify product: MULTISPECIES: MAB_1171c family putative transporter [Streptomyces] => MULTISPECIES: family putative transporter [Streptomyces]
+[09:53:05] Modify product: MULTISPECIES: TetR-like C-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:05] Modify product: MULTISPECIES: DUF2637 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:05] Modify product: MULTISPECIES: TIGR03618 family F420-dependent PPOX class oxidoreductase [Streptomyces] => MULTISPECIES: family F420-dependent PPOX class oxidoreductase [Streptomyces]
+[09:53:05] Modify product: MULTISPECIES: DUF2617 family protein [Streptomyces] => hypothetical protein
+[09:53:05] Modify product: MULTISPECIES: DUF3151 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:05] Modify product: MULTISPECIES: DUF6082 family protein [Streptomyces] => hypothetical protein
+[09:53:05] Modify product: MULTISPECIES: DUF5753 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:05] Modify product: MULTISPECIES: DUF397 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:05] Modify product: MULTISPECIES: DUF3073 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:05] Modify product: MULTISPECIES: DUF6274 family protein [Streptomyces] => hypothetical protein
+[09:53:05] Modify product: MULTISPECIES: DUF3631 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:05] Modify product: MULTISPECIES: DUF2637 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:05] Modify product: MULTISPECIES: DUF2332 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:05] Modify product: MULTISPECIES: DUF397 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:05] Modify product: MULTISPECIES: DUF5667 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:05] Modify product: MULTISPECIES: DUF397 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:05] Modify product: MULTISPECIES: DUF4328 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:05] Modify product: MULTISPECIES: DUF4232 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:05] Modify product: MULTISPECIES: DUF3558 family protein [Streptomyces] => hypothetical protein
+[09:53:05] Modify product: MULTISPECIES: DUF4291 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:05] Modify product: MULTISPECIES: PLD nuclease N-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:05] Modify product: MULTISPECIES: DUF4870 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:05] Modify product: MULTISPECIES: DUF4229 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:05] Modify product: MULTISPECIES: MaoC/PaaZ C-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:05] Modify product: MULTISPECIES: DUF418 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:05] Modify product: MULTISPECIES: DUF2092 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:06] Modify product: MULTISPECIES: MaoC family dehydratase N-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:06] Modify product: MULTISPECIES: DUF389 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:06] Modify product: MULTISPECIES: DUF2264 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:06] Modify product: MULTISPECIES: DUF397 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:06] Modify product: MULTISPECIES: DUF393 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:06] Modify product: MULTISPECIES: TIGR03619 family F420-dependent LLM class oxidoreductase [Streptomyces] => MULTISPECIES: family F420-dependent LLM class oxidoreductase [Streptomyces]
+[09:53:06] Modify product: MULTISPECIES: DUF397 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:06] Modify product: MULTISPECIES: DUF397 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:06] Modify product: DUF4232 domain-containing protein [Streptomyces rimosus] => hypothetical protein
+[09:53:06] Modify product: MULTISPECIES: DUF3307 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:06] Modify product: MULTISPECIES: DUF5047 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:06] Modify product: MULTISPECIES: DUF6415 family natural product biosynthesis protein [Streptomyces] => hypothetical protein
+[09:53:06] Modify product: MULTISPECIES: glycoside hydrolase family 38 C-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:06] Modify product: MULTISPECIES: DUF1269 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:06] Modify product: MULTISPECIES: DUF397 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:06] Modify product: MULTISPECIES: LuxR C-terminal-related transcriptional regulator [Streptomyces] => hypothetical protein
+[09:53:06] Modify product: MULTISPECIES: VC0807 family protein [Streptomyces] => MULTISPECIES: family protein [Streptomyces]
+[09:53:06] Modify product: MULTISPECIES: DUF349 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:06] Modify product: MULTISPECIES: DUF2470 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:06] Modify product: MULTISPECIES: DUF948 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:06] Modify product: MULTISPECIES: DUF6167 family protein [Streptomyces] => hypothetical protein
+[09:53:06] Modify product: MULTISPECIES: Pro-rich N-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:06] Modify product: MULTISPECIES: DUF2809 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:06] Modify product: MULTISPECIES: DUF5995 family protein [Streptomyces] => hypothetical protein
+[09:53:06] Modify product: MULTISPECIES: TetR/AcrR family transcriptional regulator C-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:06] Modify product: MULTISPECIES: DUF5134 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:06] Modify product: MULTISPECIES: DUF6421 family protein [Streptomyces] => hypothetical protein
+[09:53:06] Modify product: MULTISPECIES: DUF5133 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:06] Modify product: MULTISPECIES: DUF6332 family protein [Streptomyces] => hypothetical protein
+[09:53:06] Modify product: MULTISPECIES: DUF4865 family protein [Streptomyces] => hypothetical protein
+[09:53:06] Modify product: MULTISPECIES: MOSC N-terminal beta barrel domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:06] Modify product: MULTISPECIES: DUF6643 family protein [Streptomyces] => hypothetical protein
+[09:53:06] Modify product: MULTISPECIES: DUF5949 family protein [Streptomyces] => hypothetical protein
+[09:53:06] Modify product: MULTISPECIES: DUF4040 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:07] Modify product: MULTISPECIES: alpha-L-arabinofuranosidase C-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:07] Modify product: MULTISPECIES: DUF397 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:07] Modify product: MULTISPECIES: DUF2637 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:07] Modify product: MULTISPECIES: DUF969 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:07] Modify product: MULTISPECIES: DUF979 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:07] Modify product: MULTISPECIES: DUF742 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:07] Modify product: MULTISPECIES: DUF3000 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:07] Modify product: MULTISPECIES: DUF4349 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:07] Modify product: MULTISPECIES: DUF1996 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:07] Modify product: MULTISPECIES: TIGR04222 domain-containing membrane protein [Streptomyces] => MULTISPECIES: domain-containing membrane protein [Streptomyces]
+[09:53:07] Modify product: MULTISPECIES: DUF692 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:07] Modify product: MULTISPECIES: DUF6207 family protein [Streptomyces] => hypothetical protein
+[09:53:07] Modify product: MULTISPECIES: DUF4097 family beta strand repeat-containing protein [Streptomyces] => hypothetical protein
+[09:53:07] Modify product: MULTISPECIES: DUF2637 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:07] Modify product: MULTISPECIES: DUF1932 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:07] Modify product: MULTISPECIES: DUF6461 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:07] Modify product: MULTISPECIES: DUF998 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:08] Modify product: MULTISPECIES: DUF721 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:08] Modify product: MULTISPECIES: LuxR C-terminal-related transcriptional regulator [Streptomyces] => hypothetical protein
+[09:53:08] Modify product: MULTISPECIES: DUF6009 family protein [Streptomyces] => hypothetical protein
+[09:53:08] Modify product: MULTISPECIES: TIGR03564 family F420-dependent LLM class oxidoreductase [Streptomyces] => MULTISPECIES: family F420-dependent LLM class oxidoreductase [Streptomyces]
+[09:53:08] Modify product: MULTISPECIES: DUF4232 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:08] Modify product: MULTISPECIES: DUF6234 family protein [Streptomyces] => hypothetical protein
+[09:53:08] Modify product: MULTISPECIES: DUF4073 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:08] Modify product: MULTISPECIES: ParB N-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:08] Modify product: MULTISPECIES: DUF2992 family protein [Streptomyces] => hypothetical protein
+[09:53:08] Modify product: MULTISPECIES: DUF1918 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:08] Modify product: MULTISPECIES: DUF2079 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:08] Modify product: MULTISPECIES: SCO2322 family protein [Streptomyces] => MULTISPECIES: family protein [Streptomyces]
+[09:53:08] Modify product: MULTISPECIES: DUF6230 family protein [Streptomyces] => hypothetical protein
+[09:53:08] Modify product: MULTISPECIES: DUF6114 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:08] Modify product: MULTISPECIES: DUF4239 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:08] Modify product: MULTISPECIES: DUF6506 family protein [Streptomyces] => hypothetical protein
+[09:53:08] Modify product: MULTISPECIES: LuxR C-terminal-related transcriptional regulator [Streptomyces] => hypothetical protein
+[09:53:08] Modify product: MULTISPECIES: DUF4142 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:08] Modify product: MULTISPECIES: DUF1996 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:09] Modify product: MULTISPECIES: DUF6397 family protein [Streptomyces] => hypothetical protein
+[09:53:09] Modify product: MULTISPECIES: DUF6480 family protein [Streptomyces] => hypothetical protein
+[09:53:09] Modify product: MULTISPECIES: beta-ketoacyl synthase N-terminal-like domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:09] Modify product: MULTISPECIES: DUF4239 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:09] Modify product: MULTISPECIES: DUF2165 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:09] Modify product: MULTISPECIES: glycoside hydrolase family 3 N-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:09] Modify product: MULTISPECIES: DUF1796 family putative cysteine peptidase [Streptomyces] => hypothetical protein
+[09:53:09] Modify product: MULTISPECIES: DUF3291 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:09] Modify product: MULTISPECIES: TIGR03086 family metal-binding protein [Streptomyces] => MULTISPECIES: family metal-binding protein [Streptomyces]
+[09:53:09] Modify product: MULTISPECIES: PaaX family transcriptional regulator C-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:09] Modify product: MULTISPECIES: maleylpyruvate isomerase N-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:09] Modify product: MULTISPECIES: DUF1990 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:09] Modify product: MULTISPECIES: DUF427 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:09] Modify product: MULTISPECIES: DUF309 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:09] Modify product: MULTISPECIES: MAB_1171c family putative transporter [Streptomyces] => MULTISPECIES: family putative transporter [Streptomyces]
+[09:53:09] Modify product: MULTISPECIES: DUF742 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:09] Modify product: MULTISPECIES: ParB N-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:09] Modify product: MULTISPECIES: DUF397 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:09] Modify product: MULTISPECIES: DUF5941 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:09] Modify product: DUF3500 domain-containing protein [Streptomyces rimosus] => hypothetical protein
+[09:53:09] Modify product: MULTISPECIES: GMC family oxidoreductase N-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:09] Modify product: MULTISPECIES: DUF4185 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:09] Modify product: MULTISPECIES: MAB_1171c family putative transporter [Streptomyces] => MULTISPECIES: family putative transporter [Streptomyces]
+[09:53:09] Modify product: MULTISPECIES: BtrH N-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:09] Modify product: MULTISPECIES: ParB N-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:09] Modify product: MULTISPECIES: DUF3050 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:09] Modify product: MULTISPECIES: DUF1266 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:09] Modify product: MULTISPECIES: enolase C-terminal domain-like protein [Streptomyces] => hypothetical protein
+[09:53:09] Modify product: MULTISPECIES: DUF6158 family protein [Streptomyces] => hypothetical protein
+[09:53:09] Modify product: MULTISPECIES: DUF5107 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:09] Modify product: MULTISPECIES: DUF6204 family protein [Streptomyces] => hypothetical protein
+[09:53:09] Modify product: MULTISPECIES: DUF2867 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:09] Modify product: MULTISPECIES: Rv2578c family radical SAM protein [Streptomyces] => MULTISPECIES: family radical SAM protein [Streptomyces]
+[09:53:09] Modify product: MULTISPECIES: CU044_2847 family protein [Streptomyces] => MULTISPECIES: family protein [Streptomyces]
+[09:53:09] Modify product: MULTISPECIES: TIGR03842 family LLM class F420-dependent oxidoreductase [Streptomyces] => MULTISPECIES: family LLM class F420-dependent oxidoreductase [Streptomyces]
+[09:53:09] Modify product: MULTISPECIES: DUF1992 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:09] Modify product: MULTISPECIES: DUF6278 family protein [Streptomyces] => hypothetical protein
+[09:53:10] Modify product: MULTISPECIES: DUF1707 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:10] Modify product: MULTISPECIES: DUF6126 family protein [Streptomyces] => hypothetical protein
+[09:53:10] Modify product: MULTISPECIES: DUF5955 family protein [Streptomyces] => hypothetical protein
+[09:53:10] Modify product: MULTISPECIES: DUF6297 family protein [Streptomyces] => hypothetical protein
+[09:53:10] Modify product: MULTISPECIES: DUF2637 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:10] Modify product: MULTISPECIES: AlkA N-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:10] Modify product: MULTISPECIES: DNA polymerase ligase N-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:10] Modify product: MULTISPECIES: IclR family transcriptional regulator C-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:10] Modify product: MULTISPECIES: DUF397 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:10] Modify product: MULTISPECIES: DUF1737 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:10] Modify product: MULTISPECIES: DUF2795 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:10] Modify product: DUF3515 family protein [Streptomyces rimosus] => hypothetical protein
+[09:53:10] Modify product: MULTISPECIES: carbamoyltransferase C-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:10] Modify product: MULTISPECIES: SAV2148 family HEPN domain-containing protein [Streptomyces] => MULTISPECIES: family HEPN domain-containing protein [Streptomyces]
+[09:53:10] Modify product: MULTISPECIES: DUF1707 and FHA domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:10] Modify product: MULTISPECIES: DUF6262 family protein [Streptomyces] => hypothetical protein
+[09:53:10] Modify product: MULTISPECIES: DUF2079 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:10] Modify product: MULTISPECIES: SurA N-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:10] Modify product: MULTISPECIES: DUF6479 family protein [Streptomyces] => hypothetical protein
+[09:53:10] Modify product: MULTISPECIES: DUF501 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:10] Modify product: MULTISPECIES: DUF4287 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:10] Modify product: MULTISPECIES: DUF6879 family protein [Streptomyces] => hypothetical protein
+[09:53:10] Modify product: MULTISPECIES: TIGR03089 family protein [Streptomyces] => MULTISPECIES: family protein [Streptomyces]
+[09:53:10] Modify product: MULTISPECIES: DUF5719 family protein [Streptomyces] => hypothetical protein
+[09:53:10] Modify product: MULTISPECIES: DUF3499 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:10] Modify product: MULTISPECIES: DUF58 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:10] Modify product: MULTISPECIES: DUF4350 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:10] Modify product: MULTISPECIES: DUF4129 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:10] Modify product: MULTISPECIES: Rv3235 family protein [Streptomyces] => MULTISPECIES: family protein [Streptomyces]
+[09:53:10] Modify product: MULTISPECIES: DUF4232 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:10] Modify product: MULTISPECIES: DUF3039 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:10] Modify product: MULTISPECIES: FAD-linked oxidase C-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:10] Modify product: MULTISPECIES: DUF2017 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:10] Modify product: MULTISPECIES: SCO1431 family membrane protein [Streptomyces] => MULTISPECIES: family membrane protein [Streptomyces]
+[09:53:10] Modify product: MULTISPECIES: DUF3618 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:10] Modify product: MULTISPECIES: DUF1707 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:10] Modify product: MULTISPECIES: DUF445 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:10] Modify product: MULTISPECIES: DUF3311 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:10] Modify product: MULTISPECIES: SCO0930 family lipoprotein [Streptomyces] => MULTISPECIES: family lipoprotein [Streptomyces]
+[09:53:10] Modify product: MULTISPECIES: DUF6412 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:10] Modify product: MULTISPECIES: TIGR03364 family FAD-dependent oxidoreductase [Streptomyces] => MULTISPECIES: family FAD-dependent oxidoreductase [Streptomyces]
+[09:53:10] Modify product: MULTISPECIES: IclR family transcriptional regulator C-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:10] Modify product: MULTISPECIES: DUF3830 family protein [Streptomyces] => hypothetical protein
+[09:53:10] Modify product: MULTISPECIES: biotin carboxylase N-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:11] Modify product: MULTISPECIES: DUF4288 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:11] Modify product: MULTISPECIES: Mu transposase C-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:11] Modify product: MULTISPECIES: TetR/AcrR family transcriptional regulator C-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:11] Modify product: MULTISPECIES: DUF742 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:11] Modify product: MULTISPECIES: DUF1707 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:11] Modify product: MULTISPECIES: DUF397 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:11] Modify product: MULTISPECIES: DUF1203 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:11] Modify product: MULTISPECIES: TIGR03767 family metallophosphoesterase [Streptomyces] => MULTISPECIES: family metallophosphoesterase [Streptomyces]
+[09:53:11] Modify product: MULTISPECIES: DUF4233 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:11] Modify product: MULTISPECIES: TIGR03960 family B12-binding radical SAM protein [Streptomyces] => MULTISPECIES: family B12-binding radical SAM protein [Streptomyces]
+[09:53:11] Modify product: MULTISPECIES: TIGR03936 family radical SAM-associated protein [Streptomyces] => MULTISPECIES: family radical SAM-associated protein [Streptomyces]
+[09:53:11] Modify product: MULTISPECIES: DUF3097 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:11] Modify product: MULTISPECIES: enolase C-terminal domain-like protein [Streptomyces] => hypothetical protein
+[09:53:11] Modify product: MULTISPECIES: DUF397 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:11] Modify product: MULTISPECIES: DUF397 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:11] Modify product: MULTISPECIES: DUF6098 family protein [Streptomyces] => hypothetical protein
+[09:53:11] Modify product: MULTISPECIES: CbiX/SirB N-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:11] Modify product: MULTISPECIES: DUF3068 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:11] Modify product: MULTISPECIES: glycoside hydrolase family 3 C-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:11] Modify product: MULTISPECIES: DUF4097 family beta strand repeat-containing protein [Streptomyces] => hypothetical protein
+[09:53:11] Modify product: MULTISPECIES: DUF3145 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:11] Modify product: MULTISPECIES: DUF4429 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:11] Modify product: MULTISPECIES: DUF3052 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:11] Modify product: MULTISPECIES: DUF475 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:11] Modify product: MULTISPECIES: DUF4383 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:11] Modify product: MULTISPECIES: DUF2000 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:11] Modify product: MULTISPECIES: CU044_5270 family protein [Streptomyces] => MULTISPECIES: family protein [Streptomyces]
+[09:53:11] Modify product: MULTISPECIES: DUF6114 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:11] Modify product: MULTISPECIES: DUF6230 family protein [Streptomyces] => hypothetical protein
+[09:53:11] Modify product: MULTISPECIES: SCO3870 family protein [Streptomyces] => MULTISPECIES: family protein [Streptomyces]
+[09:53:11] Modify product: MULTISPECIES: SCO2322 family protein [Streptomyces] => MULTISPECIES: family protein [Streptomyces]
+[09:53:11] Modify product: MULTISPECIES: DUF5336 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:11] Modify product: MULTISPECIES: DUF4328 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:11] Modify product: MULTISPECIES: MaoC/PaaZ C-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:11] Modify product: MULTISPECIES: DUF6093 family protein [Streptomyces] => hypothetical protein
+[09:53:11] Modify product: MULTISPECIES: DUF6195 family protein [Streptomyces] => hypothetical protein
+[09:53:11] Modify product: MULTISPECIES: LuxR C-terminal-related transcriptional regulator [Streptomyces] => hypothetical protein
+[09:53:11] Modify product: MULTISPECIES: DUF397 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:11] Modify product: MULTISPECIES: DUF4429 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:11] Modify product: MULTISPECIES: DUF6243 family protein [Streptomyces] => hypothetical protein
+[09:53:11] Modify product: MULTISPECIES: DUF998 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:12] Modify product: MULTISPECIES: DUF397 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:12] Modify product: MULTISPECIES: DUF397 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:12] Modify product: MULTISPECIES: DUF4191 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:12] Modify product: MULTISPECIES: TIGR01777 family oxidoreductase [Streptomyces] => MULTISPECIES: family oxidoreductase [Streptomyces]
+[09:53:12] Modify product: MULTISPECIES: DUF4240 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:12] Modify product: MULTISPECIES: DUF3043 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:12] Modify product: MULTISPECIES: DUF5304 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:12] Modify product: MULTISPECIES: DUF5931 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:12] Modify product: MULTISPECIES: DUF4396 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:12] Modify product: MULTISPECIES: Rv2175c family DNA-binding protein [Streptomyces] => MULTISPECIES: family DNA-binding protein [Streptomyces]
+[09:53:12] Modify product: MULTISPECIES: DUF4126 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:12] Modify product: MULTISPECIES: SAV_6107 family HEPN domain-containing protein [Streptomyces] => MULTISPECIES: family HEPN domain-containing protein [Streptomyces]
+[09:53:12] Modify product: MULTISPECIES: DUF3040 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:12] Modify product: MULTISPECIES: DUF58 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:12] Modify product: MULTISPECIES: DUF2252 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:12] Modify product: MULTISPECIES: TIGR03085 family metal-binding protein [Streptomyces] => MULTISPECIES: family metal-binding protein [Streptomyces]
+[09:53:12] Modify product: MULTISPECIES: TIGR02234 family membrane protein [Streptomyces] => MULTISPECIES: family membrane protein [Streptomyces]
+[09:53:12] Modify product: MULTISPECIES: DUF2752 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:12] Modify product: MULTISPECIES: 5'-nucleotidase C-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:12] Modify product: MULTISPECIES: DUF4184 family protein [Streptomyces] => hypothetical protein
+[09:53:12] Modify product: MULTISPECIES: SPW_0924 family protein [Streptomyces] => MULTISPECIES: family protein [Streptomyces]
+[09:53:12] Modify product: MULTISPECIES: DUF3068 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:12] Modify product: MULTISPECIES: DUF1349 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:12] Modify product: MULTISPECIES: DUF1697 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:12] Modify product: MULTISPECIES: MAB_1171c family putative transporter [Streptomyces] => MULTISPECIES: family putative transporter [Streptomyces]
+[09:53:12] Modify product: MULTISPECIES: DUF5937 family protein [Streptomyces] => hypothetical protein
+[09:53:12] Modify product: MULTISPECIES: Rv2231c family pyridoxal phosphate-dependent protein CobC [Streptomyces] => MULTISPECIES: family pyridoxal phosphate-dependent protein CobC [Streptomyces]
+[09:53:12] Modify product: MULTISPECIES: DUF6286 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:12] Modify product: MULTISPECIES: TIGR03086 family metal-binding protein [Streptomyces] => MULTISPECIES: family metal-binding protein [Streptomyces]
+[09:53:12] Modify product: MULTISPECIES: DUF485 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:12] Modify product: MULTISPECIES: DUF3099 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:12] Modify product: MULTISPECIES: SGM_5486 family transporter-associated protein [Streptomyces] => MULTISPECIES: family transporter-associated protein [Streptomyces]
+[09:53:12] Modify product: MULTISPECIES: DUF1015 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:12] Modify product: MULTISPECIES: DUF1684 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:12] Modify product: MULTISPECIES: DUF2254 family protein [Streptomyces] => hypothetical protein
+[09:53:12] Modify product: MULTISPECIES: DUF5925 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:12] Modify product: MULTISPECIES: DUF4331 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:12] Modify product: MULTISPECIES: TetR/AcrR family transcriptional regulator C-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:12] Modify product: MULTISPECIES: DUF1343 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:12] Modify product: MULTISPECIES: DUF202 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:13] Modify product: MULTISPECIES: DUF202 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:13] Modify product: MULTISPECIES: DUF6314 family protein [Streptomyces] => hypothetical protein
+[09:53:13] Modify product: MULTISPECIES: DUF6879 family protein [Streptomyces] => hypothetical protein
+[09:53:13] Modify product: MULTISPECIES: DUF1611 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:13] Modify product: MULTISPECIES: MAB_1171c family putative transporter [Streptomyces] => MULTISPECIES: family putative transporter [Streptomyces]
+[09:53:13] Modify product: MULTISPECIES: DUF5703 family protein [Streptomyces] => hypothetical protein
+[09:53:13] Modify product: MULTISPECIES: DUF3090 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:13] Modify product: MULTISPECIES: SCO1664 family protein [Streptomyces] => MULTISPECIES: family protein [Streptomyces]
+[09:53:13] Modify product: MULTISPECIES: enolase C-terminal domain-like protein [Streptomyces] => hypothetical protein
+[09:53:13] Modify product: MULTISPECIES: GMC family oxidoreductase N-terminal domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:13] Modify product: MULTISPECIES: DUF1844 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:13] Modify product: MULTISPECIES: DUF1918 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:13] Modify product: MULTISPECIES: DUF5997 family protein [Streptomyces] => hypothetical protein
+[09:53:13] Modify product: MULTISPECIES: DUF488 family protein [Streptomyces] => hypothetical protein
+[09:53:13] Modify product: MULTISPECIES: DUF4440 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:13] Modify product: MULTISPECIES: TIGR02611 family protein [Streptomyces] => MULTISPECIES: family protein [Streptomyces]
+[09:53:13] Modify product: MULTISPECIES: DUF4365 domain-containing protein [Streptomyces] => hypothetical protein
+[09:53:13] Cleaned 497 /product names
+[09:53:13] Deleting unwanted file: /scratch/9892709/prokka_output/HP126_annotation.proteins.tmp.54020.faa
+[09:53:13] Deleting unwanted file: /scratch/9892709/prokka_output/HP126_annotation.proteins.tmp.54020.blast
+[09:53:13] There are still 291 unannotated CDS left (started with 7646)
+[09:53:13] Will use blast to search against /sw/bioinfo/prokka/1.45-5b58020/rackham/db/kingdom/Bacteria/IS with 2 CPUs
+[09:53:13] Running: cat \/scratch\/9892709\/prokka_output\/HP126_annotation\.IS\.tmp\.54020\.faa | parallel --gnu --plain -j 2 --block 15269 --recstart '>' --pipe blastp -query - -db /sw/bioinfo/prokka/1.45-5b58020/rackham/db/kingdom/Bacteria/IS -evalue 1e-30 -qcov_hsp_perc 90 -num_threads 1 -num_descriptions 1 -num_alignments 1 -seg no > \/scratch\/9892709\/prokka_output\/HP126_annotation\.IS\.tmp\.54020\.blast 2> /dev/null
+[09:53:19] Deleting unwanted file: /scratch/9892709/prokka_output/HP126_annotation.IS.tmp.54020.faa
+[09:53:19] Deleting unwanted file: /scratch/9892709/prokka_output/HP126_annotation.IS.tmp.54020.blast
+[09:53:19] There are still 288 unannotated CDS left (started with 7646)
+[09:53:19] Will use blast to search against /sw/bioinfo/prokka/1.45-5b58020/rackham/db/kingdom/Bacteria/AMR with 2 CPUs
+[09:53:19] Running: cat \/scratch\/9892709\/prokka_output\/HP126_annotation\.AMR\.tmp\.54020\.faa | parallel --gnu --plain -j 2 --block 15168 --recstart '>' --pipe blastp -query - -db /sw/bioinfo/prokka/1.45-5b58020/rackham/db/kingdom/Bacteria/AMR -evalue 9.99999999999999e-301 -qcov_hsp_perc 90 -num_threads 1 -num_descriptions 1 -num_alignments 1 -seg no > \/scratch\/9892709\/prokka_output\/HP126_annotation\.AMR\.tmp\.54020\.blast 2> /dev/null
+[09:53:24] Deleting unwanted file: /scratch/9892709/prokka_output/HP126_annotation.AMR.tmp.54020.faa
+[09:53:24] Deleting unwanted file: /scratch/9892709/prokka_output/HP126_annotation.AMR.tmp.54020.blast
+[09:53:24] There are still 288 unannotated CDS left (started with 7646)
+[09:53:24] Will use blast to search against /sw/bioinfo/prokka/1.45-5b58020/rackham/db/kingdom/Bacteria/sprot with 2 CPUs
+[09:53:24] Running: cat \/scratch\/9892709\/prokka_output\/HP126_annotation\.sprot\.tmp\.54020\.faa | parallel --gnu --plain -j 2 --block 15168 --recstart '>' --pipe blastp -query - -db /sw/bioinfo/prokka/1.45-5b58020/rackham/db/kingdom/Bacteria/sprot -evalue 1e-09 -qcov_hsp_perc 80 -num_threads 1 -num_descriptions 1 -num_alignments 1 -seg no > \/scratch\/9892709\/prokka_output\/HP126_annotation\.sprot\.tmp\.54020\.blast 2> /dev/null
+[09:53:39] Modify product: Uncharacterized signaling protein CC_0091 => putative signaling protein
+[09:53:39] Modify product: Probable low molecular weight protein-tyrosine-phosphatase => putative low molecular weight protein-tyrosine-phosphatase
+[09:53:39] Modify product: Putative glutamine amidotransferase Rv2859c => Putative glutamine amidotransferase
+[09:53:39] Cleaned 3 /product names
+[09:53:39] Deleting unwanted file: /scratch/9892709/prokka_output/HP126_annotation.sprot.tmp.54020.faa
+[09:53:39] Deleting unwanted file: /scratch/9892709/prokka_output/HP126_annotation.sprot.tmp.54020.blast
+[09:53:40] There are still 280 unannotated CDS left (started with 7646)
+[09:53:40] Will use hmmer3 to search against /sw/bioinfo/prokka/1.45-5b58020/rackham/db/hmm/HAMAP.hmm with 2 CPUs
+[09:53:40] Running: cat \/scratch\/9892709\/prokka_output\/HP126_annotation\.HAMAP\.hmm\.tmp\.54020\.faa | parallel --gnu --plain -j 2 --block 14684 --recstart '>' --pipe hmmscan --noali --notextw --acc -E 1e-09 --cpu 1 /sw/bioinfo/prokka/1.45-5b58020/rackham/db/hmm/HAMAP.hmm /dev/stdin > \/scratch\/9892709\/prokka_output\/HP126_annotation\.HAMAP\.hmm\.tmp\.54020\.hmmer3 2> /dev/null
+[09:53:55] Deleting unwanted file: /scratch/9892709/prokka_output/HP126_annotation.HAMAP.hmm.tmp.54020.faa
+[09:53:55] Deleting unwanted file: /scratch/9892709/prokka_output/HP126_annotation.HAMAP.hmm.tmp.54020.hmmer3
+[09:53:55] Deleting unwanted file: /scratch/9892709/prokka_output/proteins.psq
+[09:53:55] Deleting unwanted file: /scratch/9892709/prokka_output/proteins.phr
+[09:53:55] Deleting unwanted file: /scratch/9892709/prokka_output/proteins.pin
+[09:53:55] Labelling remaining 261 proteins as 'hypothetical protein'
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 9574
+[09:53:55] Possible /pseudo 'MULTISPECIES: non-ribosomal peptide synthetase [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 10817
+[09:53:55] Possible /pseudo 'MULTISPECIES: iron ABC transporter permease [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 16953
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 24903
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 34336
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 155864
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 157134
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 166263
+[09:53:55] Possible /pseudo 'MULTISPECIES: STAS domain-containing protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 170253
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 180265
+[09:53:55] Possible /pseudo 'MULTISPECIES: GAF and ANTAR domain-containing protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 181623
+[09:53:55] Possible /pseudo 'MULTISPECIES: GAF and ANTAR domain-containing protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 182348
+[09:53:55] Possible /pseudo 'MULTISPECIES: GAF and ANTAR domain-containing protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 183450
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 223504
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 228735
+[09:53:55] Possible /pseudo 'MULTISPECIES: phytanoyl-CoA dioxygenase family protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 233146
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 234972
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 246945
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 247228
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 250680
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 275766
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 276206
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 278089
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 278807
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 283784
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 289048
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 289969
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 290768
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 293762
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 294197
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 298204
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 298800
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 299234
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 300016
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 300887
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 301606
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 302451
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 303133
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 305791
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 309268
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 310190
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 310859
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 334151
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 335120
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 337542
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 340313
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 360089
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 360523
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 367065
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 411150
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 412018
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 424333
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 425084
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 426370
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 443531
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 444484
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 463882
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 481733
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 506276
+[09:53:55] Possible /pseudo 'MULTISPECIES: WYL domain-containing protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 525288
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 536776
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 549687
+[09:53:55] Possible /pseudo 'MULTISPECIES: alpha/beta hydrolase [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 603349
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 628778
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 633022
+[09:53:55] Possible /pseudo 'MULTISPECIES: non-ribosomal peptide synthetase [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 646014
+[09:53:55] Possible /pseudo 'MULTISPECIES: hemolysin family protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 682660
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 685462
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 886321
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 886939
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 887317
+[09:53:55] Possible /pseudo 'MULTISPECIES: ABC-F family ATP-binding cassette domain-containing protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 922046
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 934503
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 981413
+[09:53:55] Possible /pseudo 'MULTISPECIES: EamA family transporter [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 997110
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 1082174
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 1110788
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 1111870
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 1112943
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 1123448
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 1125721
+[09:53:55] Possible /pseudo 'MULTISPECIES: ATP-binding protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 1151774
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 1232701
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 1247071
+[09:53:55] Possible /pseudo 'MULTISPECIES: non-ribosomal peptide synthetase [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 1270537
+[09:53:55] Possible /pseudo 'MULTISPECIES: non-ribosomal peptide synthetase [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 1283084
+[09:53:55] Possible /pseudo 'non-ribosomal peptide synthetase [Streptomyces rimosus]' at gnl|Prokka|BFGNJJDO_1 position 1329801
+[09:53:55] Possible /pseudo 'non-ribosomal peptide synthetase [Streptomyces rimosus]' at gnl|Prokka|BFGNJJDO_1 position 1330103
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 1344918
+[09:53:55] Possible /pseudo 'MULTISPECIES: TrkA family potassium uptake protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 1350032
+[09:53:55] Possible /pseudo 'MULTISPECIES: pitrilysin family protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 1390452
+[09:53:55] Possible /pseudo 'MULTISPECIES: amino acid ABC transporter permease [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 1472706
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 1540352
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 1541074
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 1542654
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 1546716
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 1547515
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 1548189
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 1549431
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 1549961
+[09:53:55] Possible /pseudo 'MULTISPECIES: S8 family serine peptidase [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 1554262
+[09:53:55] Possible /pseudo 'MULTISPECIES: S8 family serine peptidase [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 1554856
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 1557978
+[09:53:55] Possible /pseudo 'MULTISPECIES: WXG100 family type VII secretion target [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 1560224
+[09:53:55] Possible /pseudo 'MULTISPECIES: GNAT family N-acetyltransferase [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 1581870
+[09:53:55] Possible /pseudo 'MULTISPECIES: ABC transporter permease [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 1615905
+[09:53:55] Possible /pseudo 'MULTISPECIES: signal peptidase I [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 1657456
+[09:53:55] Possible /pseudo 'MULTISPECIES: nitrate- and nitrite sensing domain-containing protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 1732616
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 1788074
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 1795061
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 1795537
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 1795845
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 1796361
+[09:53:55] Possible /pseudo 'MULTISPECIES: Ig-like domain-containing protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 1866351
+[09:53:55] Possible /pseudo 'MULTISPECIES: ABC transporter ATP-binding protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 1872213
+[09:53:55] Possible /pseudo 'MULTISPECIES: M4 family metallopeptidase [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 1885442
+[09:53:55] Possible /pseudo 'MULTISPECIES: AIM24 family protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 1964460
+[09:53:55] Possible /pseudo 'MULTISPECIES: AIM24 family protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 1965107
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 2132521
+[09:53:55] Possible /pseudo 'MULTISPECIES: PD40 domain-containing protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 2187181
+[09:53:55] Possible /pseudo 'MULTISPECIES: AIM24 family protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 2223209
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 2229526
+[09:53:55] Possible /pseudo 'MULTISPECIES: ATP-dependent DNA helicase [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 2241625
+[09:53:55] Possible /pseudo 'MULTISPECIES: ABC transporter permease [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 2258781
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 2281130
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 2298857
+[09:53:55] Possible /pseudo 'MULTISPECIES: ABC transporter permease [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 2328029
+[09:53:55] Possible /pseudo 'MULTISPECIES: ABC transporter permease [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 2336645
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 2345287
+[09:53:55] Possible /pseudo 'MULTISPECIES: IS1182-like element ISSdi1 family transposase [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 2360798
+[09:53:55] Possible /pseudo 'SpoIIE family protein phosphatase [Streptomyces rimosus]' at gnl|Prokka|BFGNJJDO_1 position 2381642
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 2470762
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 2504530
+[09:53:55] Possible /pseudo 'MULTISPECIES: aldehyde dehydrogenase family protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 2508159
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 2530965
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 2531845
+[09:53:55] Possible /pseudo 'MULTISPECIES: carboxymuconolactone decarboxylase family protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 2549439
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 2559292
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 2573222
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 2574178
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 2574679
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 2597258
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 2624957
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 2625406
+[09:53:55] Possible /pseudo 'MULTISPECIES: serine/threonine-protein kinase [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 2634365
+[09:53:55] Possible /pseudo 'MULTISPECIES: Uma2 family endonuclease [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 2645203
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 2667859
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 2673148
+[09:53:55] Possible /pseudo 'MULTISPECIES: aldo/keto reductase [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 2713127
+[09:53:55] Possible /pseudo 'MULTISPECIES: ABC transporter ATP-binding protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 2844228
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 2887488
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 2896338
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 2897173
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 2920019
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 2929187
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 2955891
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 3100472
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 3151582
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 3191065
+[09:53:55] Possible /pseudo 'MULTISPECIES: TetR/AcrR family transcriptional regulator [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 3228988
+[09:53:55] Possible /pseudo 'MULTISPECIES: GMC family oxidoreductase [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 3244772
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 3262849
+[09:53:55] Possible /pseudo 'MULTISPECIES: RNA polymerase sigma factor SigF [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 3276587
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 3284420
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 3293061
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 3293469
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 3338636
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 3339140
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 3407276
+[09:53:55] Possible /pseudo 'MULTISPECIES: class E sortase [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 3525001
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 3583673
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 3584229
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 3640636
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 3731643
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 3736661
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 3832377
+[09:53:55] Possible /pseudo 'MULTISPECIES: GAF and ANTAR domain-containing protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 3835600
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 3837000
+[09:53:55] Possible /pseudo 'MULTISPECIES: serine protease [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 3894604
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 3911953
+[09:53:55] Possible /pseudo 'MULTISPECIES: RNHCP domain-containing protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 3921416
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 3941900
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 3998441
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4067795
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4106298
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4142026
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4142806
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4159635
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4160225
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4169066
+[09:53:55] Possible /pseudo 'MULTISPECIES: ABC transporter permease [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4200273
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4221434
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4226272
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4233017
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4235359
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4236678
+[09:53:55] Possible /pseudo 'MULTISPECIES: helix-turn-helix transcriptional regulator [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4237757
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4238590
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4238832
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4239061
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4239342
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4239602
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4239919
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4240248
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4242262
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4242817
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4243146
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4243373
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4250490
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4250942
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4251277
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4251605
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4252240
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4252525
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4253020
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4253344
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4253634
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4254137
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4256183
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4256374
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4256761
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4256985
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4257491
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4258217
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4258480
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4263826
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4263998
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4264230
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4264491
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4264990
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4265124
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4265385
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4265938
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4275284
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4276438
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4276707
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4278319
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4278687
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4279082
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4286014
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4289623
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4290060
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4290415
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4290750
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4291878
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4292132
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4300179
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4301789
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4312897
+[09:53:55] Possible /pseudo 'MULTISPECIES: MerR family transcriptional regulator [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4338653
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4373977
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4385263
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4385696
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4399002
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4447205
+[09:53:55] Possible /pseudo 'MULTISPECIES: transglycosylase family protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4480024
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4498404
+[09:53:55] Possible /pseudo 'MULTISPECIES: FAD-dependent oxidoreductase [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4518444
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4536955
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4538115
+[09:53:55] Possible /pseudo 'MULTISPECIES: IS1182-like element ISSdi1 family transposase [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4548798
+[09:53:55] Possible /pseudo 'MULTISPECIES: LCP family protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4565335
+[09:53:55] Possible /pseudo 'MULTISPECIES: LCP family protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4567355
+[09:53:55] Possible /pseudo 'MULTISPECIES: glycosyltransferase [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4649564
+[09:53:55] Possible /pseudo 'MULTISPECIES: serine/threonine-protein kinase [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4667103
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4671152
+[09:53:55] Possible /pseudo 'MULTISPECIES: RDD family protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4730569
+[09:53:55] Possible /pseudo 'MULTISPECIES: PTS transporter subunit EIIC [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4749742
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4828058
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4831595
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 4882647
+[09:53:55] Possible /pseudo 'MULTISPECIES: amino acid permease [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5046891
+[09:53:55] Possible /pseudo 'MULTISPECIES: serine/threonine-protein kinase [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5051223
+[09:53:55] Possible /pseudo 'MULTISPECIES: ATP-dependent Clp protease proteolytic subunit [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5065911
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5069118
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5106192
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5108806
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5113444
+[09:53:55] Possible /pseudo 'MULTISPECIES: helix-turn-helix transcriptional regulator [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5179142
+[09:53:55] Possible /pseudo 'MULTISPECIES: TerD family protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5349410
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5403151
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5413594
+[09:53:55] Possible /pseudo 'MULTISPECIES: ABC transporter ATP-binding protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5435977
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5442842
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5458731
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5460063
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5484058
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5487786
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5489324
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5490860
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5491014
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5491778
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5492902
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5499926
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5500444
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5500985
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5501327
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5501728
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5503112
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5503373
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5505440
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5509450
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5510078
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5510356
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5510541
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5511630
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5512178
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5512697
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5513232
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5513749
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5514144
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5514263
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5514559
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5515407
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5515904
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5516532
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5516701
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5518209
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5518454
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5518789
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5519383
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5520192
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5520587
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5524096
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5524865
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5525562
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5526596
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5527252
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5527458
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5527766
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5530169
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5530567
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5531929
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5534656
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5534868
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5536128
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5536301
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5537132
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5538657
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5538961
+[09:53:55] Possible /pseudo 'MULTISPECIES: HtaA domain-containing protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5572122
+[09:53:55] Possible /pseudo 'MULTISPECIES: MFS transporter [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5577474
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5584167
+[09:53:55] Possible /pseudo 'MULTISPECIES: GAF and ANTAR domain-containing protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5624272
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5694391
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5717098
+[09:53:55] Possible /pseudo 'MULTISPECIES: C40 family peptidase [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5737343
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5751034
+[09:53:55] Possible /pseudo 'MULTISPECIES: ABC transporter permease [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5835999
+[09:53:55] Possible /pseudo 'MULTISPECIES: ADP-ribosylglycohydrolase family protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5871611
+[09:53:55] Possible /pseudo 'MULTISPECIES: ADP-ribosylglycohydrolase family protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5872778
+[09:53:55] Possible /pseudo 'MULTISPECIES: ADP-ribosylglycohydrolase family protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5874751
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5887108
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5897746
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5911635
+[09:53:55] Possible /pseudo 'MULTISPECIES: ABC transporter ATP-binding protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5935569
+[09:53:55] Possible /pseudo 'MULTISPECIES: branched-chain amino acid ABC transporter permease [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5938332
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 5976259
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 6032246
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 6049906
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 6056144
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 6056608
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 6071358
+[09:53:55] Possible /pseudo 'MULTISPECIES: chaplin [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 6155729
+[09:53:55] Possible /pseudo 'MULTISPECIES: iron chelate uptake ABC transporter family permease subunit [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 6183083
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 6185561
+[09:53:55] Possible /pseudo 'MULTISPECIES: nucleotidyltransferase domain-containing protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 6217749
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 6224451
+[09:53:55] Possible /pseudo 'MULTISPECIES: ATP-binding cassette domain-containing protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 6227829
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 6231160
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 6234502
+[09:53:55] Possible /pseudo 'MULTISPECIES: IucA/IucC family protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 6279693
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 6284423
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 6326495
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 6336471
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 6368066
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 6375544
+[09:53:55] Possible /pseudo 'MULTISPECIES: chaplin [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 6389199
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 6403353
+[09:53:55] Possible /pseudo 'MULTISPECIES: ABC transporter substrate-binding protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 6435243
+[09:53:55] Possible /pseudo 'MULTISPECIES: FKBP-type peptidyl-prolyl cis-trans isomerase [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 6454235
+[09:53:55] Possible /pseudo 'MULTISPECIES: WYL domain-containing protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 6455803
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 6457134
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 6514520
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 6549430
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 6563612
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 6579405
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 6586274
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 6659360
+[09:53:55] Possible /pseudo 'MULTISPECIES: hemolysin family protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 6674385
+[09:53:55] Possible /pseudo 'MULTISPECIES: hemolysin family protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 6701305
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 6782808
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 6874938
+[09:53:55] Possible /pseudo 'MULTISPECIES: thiolase domain-containing protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 6883815
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 6927654
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_1 position 6928689
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_2 position 5142
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_2 position 5840
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_2 position 6084
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_2 position 6777
+[09:53:55] Possible /pseudo 'MULTISPECIES: type I polyketide synthase [Streptomyces]' at gnl|Prokka|BFGNJJDO_2 position 12846
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_2 position 20047
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_2 position 51170
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_2 position 52956
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_2 position 53573
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_2 position 54324
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_2 position 57375
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_2 position 57709
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_2 position 58400
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_2 position 58737
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_2 position 60982
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_2 position 61725
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_2 position 63106
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_2 position 63767
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_2 position 64174
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_2 position 67438
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_2 position 69090
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_2 position 69576
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_2 position 69839
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_2 position 70747
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_2 position 71925
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_2 position 78414
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_2 position 81420
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_2 position 82638
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_2 position 83963
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_2 position 102972
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_2 position 107010
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_2 position 114070
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_2 position 114814
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_2 position 115109
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_2 position 115705
+[09:53:55] Possible /pseudo 'MULTISPECIES: HNH endonuclease family protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_2 position 124397
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_2 position 125870
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_2 position 126407
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_2 position 130776
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_2 position 135004
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_2 position 135761
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_2 position 136253
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_2 position 136705
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_2 position 139060
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_2 position 139218
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_2 position 160305
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_2 position 168723
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_3 position 14728
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_3 position 18644
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_3 position 30006
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_3 position 30812
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_3 position 35636
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_3 position 36518
+[09:53:55] Possible /pseudo 'MULTISPECIES: cytochrome P450 [Streptomyces]' at gnl|Prokka|BFGNJJDO_3 position 39105
+[09:53:55] Possible /pseudo 'MULTISPECIES: cytochrome P450 [Streptomyces]' at gnl|Prokka|BFGNJJDO_3 position 94139
+[09:53:55] Possible /pseudo 'hypothetical protein [Streptomyces rimosus]' at gnl|Prokka|BFGNJJDO_3 position 114299
+[09:53:55] Possible /pseudo 'MULTISPECIES: ABC-F family ATP-binding cassette domain-containing protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_3 position 141644
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_3 position 161299
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_3 position 227242
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_3 position 254924
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_3 position 265617
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_3 position 294005
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_3 position 294625
+[09:53:55] Possible /pseudo 'MULTISPECIES: type I polyketide synthase [Streptomyces]' at gnl|Prokka|BFGNJJDO_3 position 331853
+[09:53:55] Possible /pseudo 'type I polyketide synthase [Streptomyces rimosus]' at gnl|Prokka|BFGNJJDO_3 position 442810
+[09:53:55] Possible /pseudo 'type I polyketide synthase [Streptomyces rimosus]' at gnl|Prokka|BFGNJJDO_3 position 455022
+[09:53:55] Possible /pseudo 'MULTISPECIES: LuxR family transcriptional regulator [Streptomyces]' at gnl|Prokka|BFGNJJDO_3 position 496862
+[09:53:55] Possible /pseudo 'MULTISPECIES: iron chelate uptake ABC transporter family permease subunit [Streptomyces]' at gnl|Prokka|BFGNJJDO_3 position 528670
+[09:53:55] Possible /pseudo 'MULTISPECIES: non-ribosomal peptide synthetase [Streptomyces]' at gnl|Prokka|BFGNJJDO_3 position 539438
+[09:53:55] Possible /pseudo 'MULTISPECIES: iron ABC transporter permease [Streptomyces]' at gnl|Prokka|BFGNJJDO_3 position 545573
+[09:53:55] Possible /pseudo 'MULTISPECIES: iron ABC transporter permease [Streptomyces]' at gnl|Prokka|BFGNJJDO_4 position 16442
+[09:53:55] Possible /pseudo 'MULTISPECIES: non-ribosomal peptide synthetase [Streptomyces]' at gnl|Prokka|BFGNJJDO_4 position 26239
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_4 position 45440
+[09:53:55] Possible /pseudo 'MULTISPECIES: ABC transporter ATP-binding protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_4 position 85790
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_4 position 113119
+[09:53:55] Possible /pseudo 'MULTISPECIES: family 2B encapsulin nanocompartment shell protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_4 position 134241
+[09:53:55] Possible /pseudo 'MULTISPECIES: ABC transporter permease [Streptomyces]' at gnl|Prokka|BFGNJJDO_4 position 142873
+[09:53:55] Possible /pseudo 'MULTISPECIES: ABC transporter permease [Streptomyces]' at gnl|Prokka|BFGNJJDO_4 position 168353
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_4 position 173196
+[09:53:55] Possible /pseudo 'MULTISPECIES: acyl-CoA dehydrogenase family protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_4 position 176976
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_4 position 220501
+[09:53:55] Possible /pseudo 'MULTISPECIES: ABC transporter permease [Streptomyces]' at gnl|Prokka|BFGNJJDO_4 position 299150
+[09:53:55] Possible /pseudo 'MULTISPECIES: IS5 family transposase [Streptomyces]' at gnl|Prokka|BFGNJJDO_4 position 447648
+[09:53:55] Possible /pseudo 'MULTISPECIES: SDR family oxidoreductase [Streptomyces]' at gnl|Prokka|BFGNJJDO_4 position 458525
+[09:53:55] Possible /pseudo 'MULTISPECIES: SDR family oxidoreductase [Streptomyces]' at gnl|Prokka|BFGNJJDO_4 position 459471
+[09:53:55] Possible /pseudo 'MULTISPECIES: PH domain-containing protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_4 position 483917
+[09:53:55] Possible /pseudo 'MULTISPECIES: cytochrome P450 [Streptomyces]' at gnl|Prokka|BFGNJJDO_4 position 553702
+[09:53:55] Possible /pseudo 'MULTISPECIES: non-ribosomal peptide synthetase [Streptomyces]' at gnl|Prokka|BFGNJJDO_4 position 564672
+[09:53:55] Possible /pseudo 'MULTISPECIES: non-ribosomal peptide synthetase [Streptomyces]' at gnl|Prokka|BFGNJJDO_4 position 569910
+[09:53:55] Possible /pseudo 'MULTISPECIES: non-ribosomal peptide synthetase [Streptomyces]' at gnl|Prokka|BFGNJJDO_4 position 579629
+[09:53:55] Possible /pseudo 'MULTISPECIES: non-ribosomal peptide synthetase [Streptomyces]' at gnl|Prokka|BFGNJJDO_4 position 584278
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_4 position 630766
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_4 position 685301
+[09:53:55] Possible /pseudo 'MULTISPECIES: TerD family protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_4 position 761679
+[09:53:55] Possible /pseudo 'MULTISPECIES: amino acid ABC transporter permease [Streptomyces]' at gnl|Prokka|BFGNJJDO_4 position 792140
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_4 position 829585
+[09:53:55] Possible /pseudo 'MULTISPECIES: sugar ABC transporter substrate-binding protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_4 position 834707
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_4 position 846289
+[09:53:55] Possible /pseudo 'MULTISPECIES: AMP-binding protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_4 position 880792
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_4 position 904552
+[09:53:55] Possible /pseudo 'MULTISPECIES: hypothetical protein [Streptomyces]' at gnl|Prokka|BFGNJJDO_4 position 943629
+[09:53:55] Possible /pseudo 'MULTISPECIES: glycosyltransferase [Streptomyces]' at gnl|Prokka|BFGNJJDO_4 position 998907
+[09:53:55] Possible /pseudo 'MULTISPECIES: glycosyltransferase [Streptomyces]' at gnl|Prokka|BFGNJJDO_4 position 1003368
+[09:53:55] Found 23 unique /gene codes.
+[09:53:55] Fixed 2 duplicate /gene - dhmA_1 dhmA_2
+[09:53:55] Fixed 2 duplicate /gene - sasA_1 sasA_2
+[09:53:55] Fixed 2 colliding /gene names.
+[09:53:55] Adding /locus_tag identifiers
+[09:53:56] Assigned 7758 locus_tags to CDS and RNA features.
+[09:53:56] Writing outputs to /scratch/9892709/prokka_output/
+[09:54:21] Generating annotation statistics file
+[09:54:21] Generating Genbank and Sequin files
+[09:54:21] Running: tbl2asn -V b -a r10k -l paired-ends -M n -N 1 -y 'Annotated using prokka 1.14.6 from https://github.com/tseemann/prokka' -Z \/scratch\/9892709\/prokka_output\/HP126_annotation\.err -i \/scratch\/9892709\/prokka_output\/HP126_annotation\.fsa 2> /dev/null
+[09:54:52] Deleting unwanted file: /scratch/9892709/prokka_output/errorsummary.val
+[09:54:52] Deleting unwanted file: /scratch/9892709/prokka_output/HP126_annotation.dr
+[09:54:52] Deleting unwanted file: /scratch/9892709/prokka_output/HP126_annotation.fixedproducts
+[09:54:52] Deleting unwanted file: /scratch/9892709/prokka_output/HP126_annotation.ecn
+[09:54:52] Deleting unwanted file: /scratch/9892709/prokka_output/HP126_annotation.val
+[09:54:52] Repairing broken .GBK output that tbl2asn produces...
+[09:54:52] Running: sed 's/COORDINATES: profile/COORDINATES:profile/' < \/scratch\/9892709\/prokka_output\/HP126_annotation\.gbf > \/scratch\/9892709\/prokka_output\/HP126_annotation\.gbk
+[09:54:52] Deleting unwanted file: /scratch/9892709/prokka_output/HP126_annotation.gbf
+[09:54:52] Output files:
+[09:54:52] /scratch/9892709/prokka_output/HP126_annotation.ffn
+[09:54:52] /scratch/9892709/prokka_output/HP126_annotation.txt
+[09:54:52] /scratch/9892709/prokka_output/HP126_annotation.log
+[09:54:52] /scratch/9892709/prokka_output/HP126_annotation.sqn
+[09:54:52] /scratch/9892709/prokka_output/HP126_annotation.faa
+[09:54:52] /scratch/9892709/prokka_output/HP126_annotation.tbl
+[09:54:52] /scratch/9892709/prokka_output/HP126_annotation.err
+[09:54:52] /scratch/9892709/prokka_output/HP126_annotation.tsv
+[09:54:52] /scratch/9892709/prokka_output/HP126_annotation.fna
+[09:54:52] /scratch/9892709/prokka_output/HP126_annotation.gbk
+[09:54:52] /scratch/9892709/prokka_output/HP126_annotation.fsa
+[09:54:52] /scratch/9892709/prokka_output/HP126_annotation.gff
+[09:54:52] Annotation finished successfully.
+[09:54:52] Walltime used: 7.80 minutes
+[09:54:52] If you use this result please cite the Prokka paper:
+[09:54:52] Seemann T (2014) Prokka: rapid prokaryotic genome annotation. Bioinformatics. 30(14):2068-9.
+[09:54:52] Type 'prokka --citation' for more details.
+[09:54:52] Thank you, come again.
