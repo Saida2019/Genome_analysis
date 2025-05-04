@@ -1,0 +1,65 @@
+[2025-04-06 17:31:56] INFO: Starting Flye 2.9.5-b1801
+[2025-04-06 17:31:56] INFO: >>>STAGE: configure
+[2025-04-06 17:31:56] INFO: Configuring run
+[2025-04-06 17:32:50] INFO: Total read length: 2220925615
+[2025-04-06 17:32:50] INFO: Reads N50/N90: 10626 / 3518
+[2025-04-06 17:32:50] INFO: Minimum overlap set to 4000
+[2025-04-06 17:32:50] INFO: >>>STAGE: assembly
+[2025-04-06 17:32:50] INFO: Assembling disjointigs
+[2025-04-06 17:32:50] INFO: Reading sequences
+[2025-04-06 17:33:34] INFO: Counting k-mers:
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2025-04-06 17:41:59] INFO: Filling index table (1/2)
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2025-04-06 17:54:45] INFO: Filling index table (2/2)
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2025-04-06 18:11:27] INFO: Extending reads
+[2025-04-06 18:15:28] INFO: Overlap-based coverage: 190
+[2025-04-06 18:15:28] INFO: Median overlap divergence: 0.0745554
+0% 90% 100% 
+[2025-04-06 18:36:14] INFO: Assembled 2 disjointigs
+[2025-04-06 18:36:15] INFO: Generating sequence
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2025-04-06 18:36:38] INFO: Filtering contained disjointigs
+0% 50% 100% 
+[2025-04-06 18:36:44] INFO: Contained seqs: 0
+[2025-04-06 18:36:46] INFO: >>>STAGE: consensus
+[2025-04-06 18:36:46] INFO: Running Minimap2
+[2025-04-06 18:48:18] INFO: Computing consensus
+[2025-04-06 19:10:20] INFO: Alignment error rate: 0.093622
+[2025-04-06 19:10:21] INFO: >>>STAGE: repeat
+[2025-04-06 19:10:21] INFO: Building and resolving repeat graph
+[2025-04-06 19:10:21] INFO: Parsing disjointigs
+[2025-04-06 19:10:21] INFO: Building repeat graph
+0% 50% 100% 
+[2025-04-06 19:10:39] INFO: Median overlap divergence: 0.275611
+[2025-04-06 19:10:39] INFO: Parsing reads
+[2025-04-06 19:11:21] INFO: Aligning reads to the graph
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2025-04-06 19:25:23] INFO: Aligned read sequence: 1894154238 / 1952201221 (0.970266)
+[2025-04-06 19:25:23] INFO: Median overlap divergence: 0.0247613
+[2025-04-06 19:25:23] INFO: Mean edge coverage: 197
+[2025-04-06 19:25:23] INFO: Simplifying the graph
+[2025-04-06 19:25:26] INFO: >>>STAGE: contigger
+[2025-04-06 19:25:26] INFO: Generating contigs
+[2025-04-06 19:25:26] INFO: Reading sequences
+[2025-04-06 19:26:08] INFO: Generated 2 contigs
+[2025-04-06 19:26:09] INFO: Added 0 scaffold connections
+[2025-04-06 19:26:10] INFO: >>>STAGE: polishing
+[2025-04-06 19:26:10] INFO: Polishing genome (1/1)
+[2025-04-06 19:26:10] INFO: Running minimap2
+[2025-04-06 19:37:09] INFO: Separating alignment into bubbles
+[2025-04-06 20:04:30] INFO: Alignment error rate: 0.054297
+[2025-04-06 20:04:30] INFO: Correcting bubbles
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2025-04-06 20:11:25] INFO: >>>STAGE: finalize
+[2025-04-06 20:11:25] INFO: Assembly statistics:
+
+	Total length:	9647673
+	Fragments:	2
+	Fragments N50:	9355271
+	Largest frg:	9355271
+	Scaffolds:	0
+	Mean coverage:	231
+
+[2025-04-06 20:11:25] INFO: Final assembly: /home/saidas/GA_results/Flye_assembly_R7/assembly.fasta
