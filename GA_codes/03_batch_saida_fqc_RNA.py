@@ -2,7 +2,8 @@
 #SBATCH -A uppmax2025-3-3    # Project name
 #SBATCH -M snowy             # Cluster name
 #SBATCH -p core              # Partition (queue)
-#SBATCH -n 2                 # Number of CPU cores
+#SBATCH --ntasks=16
+#SBATCH --cpus-per-task=1
 #SBATCH -t 01:00:00          # Time limit (HH:MM:SS)
 #SBATCH -J saida_fqc_RNA	  # Job name
 #SBATCH --mail-user=saidasharifzade@yahoo.com	   # email notification

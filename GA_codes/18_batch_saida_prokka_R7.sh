@@ -12,23 +12,25 @@
 
 # Load modules
 module load bioinfo-tools
-module load prokka/1.14.6
+module load prokka/1.45-5b58020
 
 # Set paths
 export INPUT_DIR=/home/saidas/GA_results/Pilon_polished_R7
+export REF_DIR=/home/saidas/GA_results
 export OUTPUT_DIR=/home/saidas/GA_results/Prokka_annotation_R7
 mkdir -p $OUTPUT_DIR
 
 # Copy data to temporary directory
-cp $INPUT_DIR/pilon_polished_R7.fasta $SNIC_TMP/  
+cp $INPUT_DIR/pilon_polished_R7.fasta $REF_DIR/protein_rimoza.faa $SNIC_TMP/  
 cd $SNIC_TMP
 
 # Run Prokka annotation
 prokka --outdir $SNIC_TMP/prokka_output \
        --prefix R7_annotation \
-       --genus "Streptomyces" \
-       --species "S.rimosus" \
-       --kingdom "Bacteria" \
+       --proteins protein_rimoza.faa \
+       --genus Streptomyces \
+       --species rimosus \
+       --kingdom Bacteria \
        --cpus 2 \
        --force \
        --compliant \

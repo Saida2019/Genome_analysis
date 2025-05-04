@@ -2,7 +2,8 @@
 #SBATCH -A uppmax2025-3-3
 #SBATCH -M snowy             # Cluster name
 #SBATCH -p core              # Partition (queue)
-#SBATCH -n 2                 # Number of CPU cores
+#SBATCH --ntasks=1                 # 1 task
+#SBATCH --cpus-per-task=4          # Use 4 cores for 1 task
 #SBATCH -t 10:00:00          # Time limit (HH:MM:SS)
 #SBATCH -J saida_flye_assembly_R7      # Job name
 #SBATCH --mail-user=saidasharifzade@yahoo.com      # Job email notification
@@ -23,7 +24,7 @@ cd $SNIC_TMP
 
 # Process each sample
 
-flye -t 2 --nano-raw SRR24413072.fastq.gz --out-dir $OUTPUT_DIR
+flye -t 4 --nano-raw SRR24413072.fastq.gz --out-dir $OUTPUT_DIR
 
 
 # Copy the output files back to the results director

@@ -2,7 +2,8 @@
 #SBATCH -A uppmax2025-3-3    # Project name
 #SBATCH -M snowy             # Cluster name
 #SBATCH -p core              # Partition (queue)
-#SBATCH -n 2                 # Number of CPU cores
+#SBATCH --ntasks=16
+#SBATCH --cpus-per-task=1
 #SBATCH -t 01:00:00          # Time limit (HH:MM:SS)
 #SBATCH -J saida_fqc_trimmed	  # Job name
 #SBATCH --mail-user=saidasharifzade@yahoo.com	   # email notification
@@ -26,7 +27,7 @@ cd $SNIC_TMP
 
 for i in 65 71
 do
-    fastqc -t 2 -o $OUTPUT_DIR SRR244130"$i"_1_trimmed.fastq.gz SRR244130"$i"_2_trimmed.fastq.gz
+    fastqc -t 2 -o $OUTPUT_DIR SRR244130"$i"_*.fastq.gz
 done
 
 

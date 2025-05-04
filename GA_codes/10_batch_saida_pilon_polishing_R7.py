@@ -2,7 +2,8 @@
 #SBATCH -A uppmax2025-3-3
 #SBATCH -M snowy
 #SBATCH -p core
-#SBATCH -n 2
+#SBATCH --ntasks=1                 # 1 task
+#SBATCH --cpus-per-task=4          # Use 4 cores for 1 task
 #SBATCH --mem=16G
 #SBATCH -t 02:00:00
 #SBATCH -J pilon_polishing_R7
@@ -31,11 +32,11 @@ cd $SNIC_TMP
 bwa index assembly_R7.fasta 
 
 # Map paired-end reads
-bwa mem -v 3 -t 2 assembly_R7.fasta SRR24413071_1_trimmed.fastq.gz SRR24413071_2_trimmed.fastq.gz > aligned_R7_paired.sam
+bwa mem -v 3 -t 4 assembly_R7.fasta SRR24413071_1_trimmed.fastq.gz SRR24413071_2_trimmed.fastq.gz > aligned_R7_paired.sam
 
 # Map unpaired reads separately
-bwa mem -v 3 -t 2 assembly_R7.fasta SRR24413071_1_unpaired.trimmed.fastq.gz > aligned_R7_unp1.sam
-bwa mem -v 3 -t 2 assembly_R7.fasta SRR24413071_2_unpaired.trimmed.fastq.gz > aligned_R7_unp2.sam
+bwa mem -v 3 -t 4 assembly_R7.fasta SRR24413071_1_unpaired.trimmed.fastq.gz > aligned_R7_unp1.sam
+bwa mem -v 3 -t 4 assembly_R7.fasta SRR24413071_2_unpaired.trimmed.fastq.gz > aligned_R7_unp2.sam
 
 # Convert SAMs to BAMs
 samtools view -b aligned_R7_paired.sam > paired_R7.bam
@@ -54,15 +55,15 @@ samtools index unpaired_R7.sorted.bam
 
 # Run Pilon
 java -Xmx16G -jar $PILON_HOME/pilon.jar \
-  -genome assembly_R7.fasta \
-  -frags paired_R7.sorted.bam \
-  -unpaired unpaired_R7.sorted.bam \
-  -output pilon_polished_R7 \
-  -t 2 \
-  -changes \
-  -vcf
+  --genome assembly_R7.fasta \
+  --frags paired_R7.sorted.bam \
+  --unpaired unpaired_R7.sorted.bam \
+  --output pilon_polished_R7 \
+  --threads 4 \
+  --changes \
+  --vcf
 
 # Copy results
 cp pilon_polished_R7* $OUTPUT_DIR/
 cp paired_R7.sorted.bam paired_R7.sorted.bam.bai unpaired_R7.sorted.bam unpaired_R7.sorted.bam.bai \
- /proj/uppmax2025-3-3/nobackup/work/
+ /proj/uppmax2025-3-3/GA_Saida/BAM_R7

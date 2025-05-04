@@ -2,7 +2,8 @@
 #SBATCH -A uppmax2025-3-3
 #SBATCH -M snowy             # Cluster name
 #SBATCH -p core              # Partition (queue)
-#SBATCH -n 4                 # Number of CPU cores
+#SBATCH --ntasks=1                 # 1 task
+#SBATCH --cpus-per-task=4          # Use 4 cores for 1 task
 #SBATCH --mem=16G
 #SBATCH -t 06:00:00          # Time limit (HH:MM:SS)
 #SBATCH -J saida_flye_assembly_HP126      # Job name

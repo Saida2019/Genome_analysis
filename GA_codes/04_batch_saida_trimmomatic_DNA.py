@@ -2,7 +2,8 @@
 #SBATCH -A uppmax2025-3-3
 #SBATCH -M snowy             # Cluster name
 #SBATCH -p core              # Partition (queue)
-#SBATCH -n 2                 # Number of CPU cores
+#SBATCH --ntasks=16
+#SBATCH --cpus-per-task=1
 #SBATCH -t 01:00:00          # Time limit (HH:MM:SS)
 #SBATCH -J saida_trimming_DNA      # Job name
 #SBATCH --mail-user=saidasharifzade@yahoo.com      # Job email notification
@@ -25,12 +26,12 @@ for i in 65 71
 do 
     trimmomatic PE -phred33 \
 SRR244130"$i"_1.fastq.gz SRR244130"$i"_2.fastq.gz \
-SRR244130"$i"_1_trimmed.fastq.gz SRR244130"$i"_2_trimmed.fastq.gz \
-SRR244130"$i"_1_unpaired.trimmed.fastq.gz SRR244130"$i"_2_unpaired.trimmed.fastq.gz \
-ILLUMINACLIP:$TRIMMOMATIC_HOME/adapters/TruSeq3-PE.fa:2:30:10 \
-LEADING:20 TRAILING:15 MINLEN:100 \
+SRR244130"$i"_1_trimmed.fastq.gz SRR244130"$i"_1_unpaired.trimmed.fastq.gz \
+SRR244130"$i"_2_trimmed.fastq.gz SRR244130"$i"_2_unpaired.trimmed.fastq.gz \
+ILLUMINACLIP:$TRIMMOMATIC_HOME/adapters/TruSeq3-PE.fa:2:30:10:2:keepBothReads \
+LEADING:20 TRAILING:20 MINLEN:100 \
 -threads 2                    
 done
 
 # Copy the output files back to the results director
-cp *trimmed.fastq.gz *unpaired.trimmed.fastq.gz $OUTPUT_DIR/
+cp *.gz $OUTPUT_DIR/
