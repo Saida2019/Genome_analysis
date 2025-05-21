@@ -40,6 +40,6 @@ emapper.py \
   --decorate_gff_ID_field GeneID \
   --excel
 
-# Copy results
+# Copy results to output folder
 
 cp $SNIC_TMP/HP126_eggnog_results.* $OUTPUT_DIR/

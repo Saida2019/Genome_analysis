@@ -35,5 +35,5 @@ delta-filter -1 -i 90 -l 1000 asmHP126_vs_ref.delta > asmHP126_vs_ref.filtered.d
 # Generate MUMmerplot
 mummerplot --prefix=asmHP126_vs_ref --png --layout --filter asmHP126_vs_ref.filtered.delta
 
-# Copy results
+# Copy results into output folder
 cp asmHP126_vs_ref.* $OUTPUT_DIR/

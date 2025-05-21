@@ -45,6 +45,7 @@ featureCounts -T 8 -p -t gene -g ID \
   $SAMPLE \
   2> ${BASENAME}_featureCounts.log
 
+# Copy results to output folder
   cp ${BASENAME}_counts.txt $OUTPUT_DIR/
   cp ${BASENAME}_counts.txt.summary $OUTPUT_DIR/
   cp ${BASENAME}_featureCounts.log $OUTPUT_DIR/

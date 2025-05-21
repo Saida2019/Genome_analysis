@@ -36,5 +36,5 @@ prokka --outdir $SNIC_TMP/prokka_output \
        --compliant \
        pilon_polished_HP126.fasta 
 
-# Copy results
+# Copy results to output folder
 cp $SNIC_TMP/prokka_output/* $OUTPUT_DIR/

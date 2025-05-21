@@ -6,7 +6,7 @@
 #SBATCH --cpus-per-task=4          # Use 4 cores for 1 task
 #SBATCH -t 10:00:00          # Time limit (HH:MM:SS)
 #SBATCH -J saida_flye_assembly_R7      # Job name
-#SBATCH --mail-user=saidasharifzade@yahoo.com      # Job email notification
+#SBATCH --mail-user=saidasharifzade@yahoo.com  
 #SBATCH --output=%x.%j.out
 ##SBATCH --reservation=uppmax2025-3-3_1
 

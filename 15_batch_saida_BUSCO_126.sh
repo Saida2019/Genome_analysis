@@ -2,8 +2,8 @@
 #SBATCH -A uppmax2025-3-3
 #SBATCH -M snowy
 #SBATCH -p core
-#SBATCH --ntasks=1               # 1 task
-#SBATCH --cpus-per-task=4        # Use 4 cores for 1 task
+#SBATCH --ntasks=1               
+#SBATCH --cpus-per-task=4       
 #SBATCH --mem=16G
 #SBATCH -t 02:00:00
 #SBATCH -J busco_analysis_H126

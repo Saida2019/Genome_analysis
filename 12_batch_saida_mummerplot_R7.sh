@@ -35,5 +35,5 @@ delta-filter -1 -i 90 -l 1000 asmR7_vs_ref.delta > asmR7_vs_ref.filtered.delta
 # Generate MUMmerplot
 mummerplot --prefix=asmR7_vs_ref --png --layout --filter asmR7_vs_ref.filtered.delta
 
-# Copy results
+# Copy results into output folder
 cp asmR7_vs_ref* $OUTPUT_DIR/

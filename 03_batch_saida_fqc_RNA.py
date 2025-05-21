@@ -6,7 +6,7 @@
 #SBATCH --cpus-per-task=1
 #SBATCH -t 01:00:00          # Time limit (HH:MM:SS)
 #SBATCH -J saida_fqc_RNA	  # Job name
-#SBATCH --mail-user=saidasharifzade@yahoo.com	   # email notification
+#SBATCH --mail-user=saidasharifzade@yahoo.com
 #SBATCH --output=%x.%j.out
 ##SBATCH --reservation=uppmax2025-3-3_1
 

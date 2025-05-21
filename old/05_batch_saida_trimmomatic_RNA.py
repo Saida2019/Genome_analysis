@@ -1,11 +1,11 @@
 #!/bin/bash -l
 #SBATCH -A uppmax2025-3-3
 #SBATCH -M snowy             # Cluster name
-#SBATCH -p core              # Partition (queue)
+#SBATCH -p core              # Partition
 #SBATCH -n 2                 # Number of CPU cores
 #SBATCH -t 01:00:00          # Time limit (HH:MM:SS)
 #SBATCH -J saida_RNA_trimming      # Job name
-#SBATCH --mail-user=saidasharifzade@yahoo.com      # Job email notification
+#SBATCH --mail-user=saidasharifzade@yahoo.com      
 #SBATCH --output=%x.%j.out
 ##SBATCH --reservation=uppmax2025-3-3_1
 

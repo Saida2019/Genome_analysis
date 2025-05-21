@@ -64,7 +64,7 @@ java -Xmx16G -jar $PILON_HOME/pilon.jar \
   --changes \
   --vcf
 
-# Copy results
+# Copy results into output folder
 cp pilon_polished_HP126* $OUTPUT_DIR/
 cp paired_HP126.sorted.bam paired_HP126.sorted.bam.bai unpaired_HP126.sorted.bam unpaired_HP126.sorted.bam.bai \
 /proj/uppmax2025-3-3/GA_Saida/BAM_126

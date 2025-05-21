@@ -7,7 +7,7 @@
 #SBATCH --mem=16G
 #SBATCH -t 06:00:00          # Time limit (HH:MM:SS)
 #SBATCH -J saida_flye_assembly_HP126      # Job name
-#SBATCH --mail-user=saidasharifzade@yahoo.com      # Job email notification
+#SBATCH --mail-user=saidasharifzade@yahoo.com 
 #SBATCH --output=%x.%j.out
 ##SBATCH --reservation=uppmax2025-3-3_1
 

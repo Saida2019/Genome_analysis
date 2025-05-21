@@ -35,6 +35,6 @@ blastn -query pilon_polished_HP126.fasta \
        -evalue 1e-10 \
        -out HP126_vs_R7_blastn.tsv
 
-# Copy results back
+# Copy results back to output folder
 cp HP126_vs_R7_blastn.tsv $OUTPUT_DIR/
 

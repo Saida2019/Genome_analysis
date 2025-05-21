@@ -45,7 +45,7 @@ do
     samtools sort ${SAMPLE}.bam -o ${SAMPLE}_HP126.sorted.bam
     samtools index ${SAMPLE}_HP126.sorted.bam
 
-    # Save outputs
+    # Save outputs to outpud folder
     cp ${SAMPLE}.sam $OUTPUT_DIR/
     cp ${SAMPLE}_HP126.sorted.bam $OUTPUT_DIR/
     cp ${SAMPLE}_HP126.sorted.bam.bai $OUTPUT_DIR/

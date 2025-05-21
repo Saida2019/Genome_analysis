@@ -19,7 +19,7 @@ export REF_DIR=/home/saidas/2_Beganovic_2023/reference_genome
 export OUTPUT_DIR=/home/saidas/GA_results/Assembly_validation_R7
 mkdir -p $OUTPUT_DIR
 
-# Copy files to temp dir
+# Copy files to temporary directory
 cp $INPUT_DIR/pilon_polished_R7.fasta $SNIC_TMP/
 cp $REF_DIR/R7_genome.fasta $SNIC_TMP/
 cd $SNIC_TMP

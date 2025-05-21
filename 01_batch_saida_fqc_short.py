@@ -6,7 +6,7 @@
 #SBATCH --cpus-per-task=1
 #SBATCH -t 01:00:00          # Time limit (HH:MM:SS)
 #SBATCH -J project_saida_fqc	  # Job name
-#SBATCH --mail-user=saidasharifzade@yahoo.com	   # email notification
+#SBATCH --mail-user=saidasharifzade@yahoo.com
 #SBATCH --output=%x.%j.out
 #SBATCH --reservation=uppmax2025-3-3_1
 
@@ -16,7 +16,6 @@ module load bioinfo-tools FastQC/0.11.9
 
 # Define input directory
 export INPUT_DIR=/home/saidas/2_Beganovic_2023/DNA_reads/short_reads/
-
 
 # Copy files to temporary directory for processing
 cp $INPUT_DIR/*fastq.gz $SNIC_TMP/

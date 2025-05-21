@@ -6,7 +6,7 @@
 #SBATCH --cpus-per-task=1
 #SBATCH -t 01:00:00          # Time limit (HH:MM:SS)
 #SBATCH -J saida_fqcl	  # Job name
-#SBATCH --mail-user=saidasharifzade@yahoo.com	   # email notification
+#SBATCH --mail-user=saidasharifzade@yahoo.com
 #SBATCH --output=%x.%j.out
 #SBATCH --reservation=uppmax2025-3-3_1
 
@@ -25,7 +25,7 @@ cd $SNIC_TMP
 export OUTPUT_DIR=/home/saidas/GA_results/FQC_long
 
 # Set Java options to increase heap space
-export FASTQC_JAVA_OPTIONS="-Xmx4G"  # Set Java heap size to 4GB
+export FASTQC_JAVA_OPTIONS="-Xmx4G" 
 
 # Run FastQC on each of the specified files
 
