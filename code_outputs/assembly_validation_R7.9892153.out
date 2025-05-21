@@ -1,6 +1,0 @@
-gnuplot 4.6 patchlevel 2
-Writing filtered delta file asmR7_vs_ref.filter
-Reading delta file asmR7_vs_ref.filter
-Writing plot files asmR7_vs_ref.fplot, asmR7_vs_ref.rplot
-Writing gnuplot script asmR7_vs_ref.gp
-Rendering plot asmR7_vs_ref.png
